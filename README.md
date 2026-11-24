@@ -3,7 +3,7 @@
 Reproducibility bundle for paper A (version 6, 24 November 2026): *A benchmark on finite graphs with a frozen replication and a holdout.*
 
 **Author:** Adam Faust, MOBLUEHQ, Inc. **Contact:** adam@mobluehq.com
-**Citation:** DOI: to be added (Zenodo). See `CITATION.cff`.
+**Citation:** DOI: [10.5281/zenodo.24488979](https://doi.org/10.5281/zenodo.24488979). See `CITATION.cff`.
 
 ## What the paper is
 Claims that the spectral dimension of a network or quantum-gravity model flows with scale rest on the log-derivative of a noisy return probability on a

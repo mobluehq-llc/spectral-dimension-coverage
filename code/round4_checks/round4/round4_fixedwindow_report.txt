@@ -1,0 +1,48 @@
+EXPLORATORY. raw_amend10c.csv sha256 fe21111cc822eb32 == manifest. Realised cells only (cell >= 9000), mode == fixed.
+fixed-window rows by est: {'E1q': 10800, 'E4c': 10800, 'E4r': 10800}; columns carrying a reason: why=3617 non-null
+
+== E1q: rows 10800; abstentions 1200 = structural (J_fixed<6) 1200 + eligible (J_fixed>=6) 0
+  recorded 'why' among eligible abstentions: {}
+  recorded 'why' among structural abstentions: {'window': 1200}
+  'J' column among eligible abstentions: {}
+  eligible abstentions by cell:
+  none
+
+== E4c: rows 10800; abstentions 1213 = structural (J_fixed<6) 1200 + eligible (J_fixed>=6) 13
+  recorded 'why' among eligible abstentions: {'solver': 13}
+  recorded 'why' among structural abstentions: {'window': 1200}
+  'J' column among eligible abstentions: {-9.0: 13}
+  eligible abstentions by cell:
+       fam   L  wpn  J_fixed_meta  n_abstain
+aniso2_w16 320  128          13.0          1
+aniso2_w16 384  128          14.0          1
+aniso2_w16 512  128          16.0          2
+aniso2_w16 768    8          18.0          1
+aniso2_w16 768   32          18.0          2
+aniso2_w16 768  128          18.0          5
+ aniso3_w8 256    8          13.0          1
+
+== E4r: rows 10800; abstentions 1204 = structural (J_fixed<6) 1200 + eligible (J_fixed>=6) 4
+  recorded 'why' among eligible abstentions: {'solver': 4}
+  recorded 'why' among structural abstentions: {'window': 1200}
+  'J' column among eligible abstentions: {-9.0: 4}
+  eligible abstentions by cell:
+       fam   L  wpn  J_fixed_meta  n_abstain
+aniso2_w16 512  128          16.0          2
+aniso2_w16 768  128          18.0          2
+
+E4c eligible-abstention rows: non-null columns: {'est': 13, 'abstain': 13, 'cell': 13, 'ds': 13, 'wpn': 13, 'mode': 13, 'J_fixed': 13, 'why': 13, 'fam': 13, 'L': 13, 'exact_J': 13, 'J_fixed_meta': 13, 'eligible': 13}
+  distinct J values / J_fixed in those rows: {nan: 13} / {18: 8, 16: 2, 13: 2, 14: 1}
+
+== Bar 10c-B: E4c simultaneous coverage >= 93% at each wpn, pooled and per family (point estimate; CP shown; CP-lower strict flag)
+E4c bar B [published]: all 9 rows >= 93% (point): True; also CP-lower >= 93%: True; failing rows: []
+E4c bar B [eligible_miss]: all 9 rows >= 93% (point): True; also CP-lower >= 93%: True; failing rows: []
+E4c bar B [all_miss]: all 9 rows >= 93% (point): False; also CP-lower >= 93%: False; failing rows: [('pooled', 8, '3123/3600 = 86.8% (85.6-87.8)'), ('pooled', 32, '3101/3600 = 86.1% (85.0-87.3)'), ('pooled', 128, '3070/3600 = 85.3% (84.1-86.4)'), ('aniso3_w8', 8, '1372/1800 = 76.2% (74.2-78.2)'), ('aniso3_w8', 32, '1359/1800 = 75.5% (73.4-77.5)'), ('aniso3_w8', 128, '1333/1800 = 74.1% (72.0-76.1)')]
+E4r bar B [published]: all 9 rows >= 93% (point): True; also CP-lower >= 93%: False; failing rows: []
+E4r bar B [eligible_miss]: all 9 rows >= 93% (point): True; also CP-lower >= 93%: False; failing rows: []
+E4r bar B [all_miss]: all 9 rows >= 93% (point): False; also CP-lower >= 93%: False; failing rows: [('pooled', 8, '3082/3600 = 85.6% (84.4-86.7)'), ('pooled', 32, '3061/3600 = 85.0% (83.8-86.2)'), ('pooled', 128, '3043/3600 = 84.5% (83.3-85.7)'), ('aniso3_w8', 8, '1362/1800 = 75.7% (73.6-77.6)'), ('aniso3_w8', 32, '1348/1800 = 74.9% (72.8-76.9)'), ('aniso3_w8', 128, '1310/1800 = 72.8% (70.7-74.8)')]
+
+E4c detail, highest budget (wpn 128), pooled and per family:
+  pooled: published 3070/3191 = 96.2% (95.5-96.8); eligible-failures-as-misses 3070/3200 = 95.9% (95.2-96.6); all-abstentions-as-misses 3070/3600 = 85.3% (84.1-86.4)
+  aniso2_w16: published 1737/1791 = 97.0% (96.1-97.7); eligible-failures-as-misses 1737/1800 = 96.5% (95.5-97.3); all-abstentions-as-misses 1737/1800 = 96.5% (95.5-97.3)
+  aniso3_w8: published 1333/1400 = 95.2% (94.0-96.3); eligible-failures-as-misses 1333/1400 = 95.2% (94.0-96.3); all-abstentions-as-misses 1333/1800 = 74.1% (72.0-76.1)

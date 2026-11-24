@@ -1,0 +1,14 @@
+cell,fam,L,wpn,ds,J,J_fixed,why,abstain
+9231,aniso2_w16,768,128,21,,18,solver,1
+9231,aniso2_w16,768,128,51,,18,solver,1
+9231,aniso2_w16,768,128,83,,18,solver,1
+9231,aniso2_w16,768,128,121,,18,solver,1
+9231,aniso2_w16,768,128,192,,18,solver,1
+9230,aniso2_w16,512,128,114,,16,solver,1
+9230,aniso2_w16,512,128,190,,16,solver,1
+9229,aniso2_w16,384,128,191,,14,solver,1
+9228,aniso2_w16,320,128,50,,13,solver,1
+9031,aniso2_w16,768,32,60,,18,solver,1
+9031,aniso2_w16,768,32,176,,18,solver,1
+9122,aniso3_w8,256,8,111,,13,solver,1
+9131,aniso2_w16,768,8,101,,18,solver,1

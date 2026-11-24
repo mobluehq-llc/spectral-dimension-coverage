@@ -1,0 +1,5 @@
+cell,rows,abstain_equal,answered,J_equal,hw_equal,cov_equal
+ring_128,200,200,127,127,127,127
+ring_256,200,200,200,200,200,200
+ring_512,200,200,200,200,200,200
+ring_1024,200,200,200,200,200,200

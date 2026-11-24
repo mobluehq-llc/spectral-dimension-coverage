@@ -1,0 +1,6 @@
+E0 controls: pointwise 1829/1939 = 94.3%   native 1827/1939 = 94.2%   (from r3_native_E0_E2_all_cells.csv)
+E0 realised crossovers: pointwise 982/1226 = 80.1%   native 1151/1226 = 93.9%   (from r3_native_E0_E2_all_cells.csv)
+E2 controls: pointwise 1108/1208 = 91.7%   native 1108/1208 = 91.7%   (from r3_native_E0_E2_all_cells.csv)
+E2 realised crossovers: pointwise 869/996 = 87.2%   native 924/996 = 92.8%   (from r3_native_E0_E2_all_cells.csv)
+E4o diagnosis: answered datasets in all eight rows 15125; bound misses 0   (from e4diag_summary.csv)
+E4o diagnosis: min over rows of min_sd_ratio = 0.77

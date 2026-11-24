@@ -1,0 +1,8 @@
+group,n,covered,not_covered_with_band,infeasible_no_band,atom_sensitive,infeasible_and_atom_sensitive,atom_sensitive_with_band_covered,atom_sensitive_with_band_not_covered,stable_feasible_covered,stable_feasible_not_covered
+ALL,9400,9332,2,66,170,9,161,0,9171,2
+brush,600,599,1,0,1,0,1,0,598,1
+control,2800,2795,1,4,13,1,12,0,2783,1
+crossover_not_realised,1000,1000,0,0,0,0,0,0,1000,0
+crossover_realised,3600,3556,0,44,88,3,85,0,3471,0
+gasket,600,600,0,0,1,0,1,0,599,0
+twostep,800,782,0,18,67,5,62,0,720,0

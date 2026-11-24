@@ -1,0 +1,123 @@
+==================== 9a: E7j joint change test (same cells and data as Amendment 8, wpn 32)
+(F) E7j FPR (margin 0.25, any sign) on controls 0/2800 = 0.0% (CP 0.0-0.1); cells with CP-lower > 5%: [] -> PASS
+  per control cell: 0:0/200 1:0/200 2:0/200 3:0/200 4:0/200 5:0/200 6:0/200 7:0/200 8:0/200 9:0/200 10:0/200 11:0/200 12:0/200 13:0/200
+(M) aniso3_w8: min L (power>=0.8 here and above) = 160; bar <= 160 -> PASS; power 32:0.00 48:0.00 64:0.00 80:0.12 96:0.29 112:0.59 128:0.61 160:0.90 192:0.96 256:0.97
+(M) aniso2_w16: min L (power>=0.8 here and above) = not reached; bar <= 512 -> FAIL; power 32:0.00 48:0.00 64:0.00 96:0.00 128:0.00 160:0.00 192:0.00 224:0.00 256:0.00 320:0.00 384:0.00 512:0.00 768:0.00
+VERDICT E7j: E7j does NOT beat the trade-off (F pass, M FAIL)
+--- 9a ungated
+aniso3_w8 power E7 (interval arithmetic, recomputed) vs E7j: 32:0.00/0.00 48:0.00/0.00 64:0.00/0.00 80:0.00/0.12 96:0.01/0.29 112:0.04/0.59 128:0.06/0.61 160:0.28/0.90 192:0.40/0.96 256:0.86/0.97
+aniso2_w16 power E7 (interval arithmetic, recomputed) vs E7j: 32:0.00/0.00 48:0.00/0.00 64:0.00/0.00 96:0.00/0.00 128:0.00/0.00 160:0.00/0.00 192:0.00/0.00 224:0.00/0.00 256:0.00/0.00 320:0.00/0.00 384:0.00/0.00 512:0.00/0.00 768:0.00/0.00
+datasets: 7400; no-window 0; E7-infeasible (no measure in box; no declaration) 48; E7 gate failures 101
+E7j declared whenever E7 declared (must be 0 violations): 0
+E7j gate: datasets with any decision re-run at twice the atoms 740; with disagreement (decision withheld) 1; datasets with an undecided (tolerance/unresolved) (j,sign) 18; unresolved LPs 0; LPs 211220
+time per dataset: E7 LP mean 0.53s; E7j extra mean 0.75s, median 0.35s, max 20.2s
+reproduction of the Amendment 8 E7 band (same data/seeds): decl_neg equal 7400/7400; atoms equal 7400/7400; status equal 7400/7400
+misspecified cells (ungated): 100 twostep_8_32 L=128: drop 0.000 rise 0.000; 101 twostep_8_32 L=192: drop 0.010 rise 0.000; 102 twostep_8_32 L=256: drop 0.120 rise 0.000; 103 twostep_8_32 L=320: drop 0.635 rise 0.000; 104 brush_f24 L=8: drop 0.000 rise 0.940; 105 brush_f16 L=12: drop 0.000 rise 1.000; 106 brush_f16 L=16: drop 0.000 rise 1.000; 107 gasket L=5: drop 0.000 rise 0.000; 108 gasket L=6: drop 0.000 rise 0.000; 109 gasket L=7: drop 0.000 rise 0.000
+==================== 9b: frozen confirmatory replication (code at git 1ba9ca6, fresh seeds [22, id, 2000 + ds])
+ wpn arm  ctrl_n  ctrl_abstain     C                              C_cov C_bad_cells    F                       F_fpr F_bad_cells     X                              X_cov
+   8  E0    1922         0.314 False   1801/1922 = 93.7% (CP 92.5-94.7)      [9110] True  8/1922 = 0.4% (CP 0.2-0.8)          [] False   2589/3185 = 81.3% (CP 79.9-82.6)
+   8 E1q    1731         0.382  True   1630/1731 = 94.2% (CP 93.0-95.2)          [] True 14/1731 = 0.8% (CP 0.4-1.4)          [] False   1452/2926 = 49.6% (CP 47.8-51.5)
+   8 E4c    1731         0.382  True   1717/1731 = 99.2% (CP 98.6-99.6)          [] True  1/1731 = 0.1% (CP 0.0-0.3)          []  True   2865/2925 = 97.9% (CP 97.4-98.4)
+   8 E4r    1731         0.382  True   1714/1731 = 99.0% (CP 98.4-99.4)          [] True  2/1731 = 0.1% (CP 0.0-0.4)          []  True   2811/2926 = 96.1% (CP 95.3-96.7)
+   8  E6    1731         0.382  True   1724/1731 = 99.6% (CP 99.2-99.8)          [] True  0/1731 = 0.0% (CP 0.0-0.2)          []  True   2896/2926 = 99.0% (CP 98.5-99.3)
+   8  E7    2800         0.000  True  2798/2800 = 99.9% (CP 99.7-100.0)          [] True  0/2800 = 0.0% (CP 0.0-0.1)          []  True   3577/3600 = 99.4% (CP 99.0-99.6)
+   8  E8    2800         0.000  True   2784/2800 = 99.4% (CP 99.1-99.7)          [] True  0/2800 = 0.0% (CP 0.0-0.1)          []  True   3581/3600 = 99.5% (CP 99.2-99.7)
+  32  E0    1933         0.310  True   1833/1933 = 94.8% (CP 93.7-95.8)          [] True  1/1933 = 0.1% (CP 0.0-0.3)          [] False   2163/3204 = 67.5% (CP 65.9-69.1)
+  32 E1q    1930         0.311  True   1799/1930 = 93.2% (CP 92.0-94.3)          [] True  7/1930 = 0.4% (CP 0.1-0.7)          [] False    586/3195 = 18.3% (CP 17.0-19.7)
+  32 E4c    1928         0.311  True   1909/1928 = 99.0% (CP 98.5-99.4)          [] True  0/1928 = 0.0% (CP 0.0-0.2)          []  True   3079/3193 = 96.4% (CP 95.7-97.0)
+  32 E4r    1930         0.311  True   1907/1930 = 98.8% (CP 98.2-99.2)          [] True  0/1930 = 0.0% (CP 0.0-0.2)          []  True   3033/3195 = 94.9% (CP 94.1-95.7)
+  32  E6    1930         0.311  True   1922/1930 = 99.6% (CP 99.2-99.8)          [] True  0/1930 = 0.0% (CP 0.0-0.2)          []  True   3054/3195 = 95.6% (CP 94.8-96.3)
+  32  E7    2800         0.000  True  2796/2800 = 99.9% (CP 99.6-100.0)          [] True  0/2800 = 0.0% (CP 0.0-0.1)          []  True   3560/3600 = 98.9% (CP 98.5-99.2)
+  32  E8    2800         0.000  True  2796/2800 = 99.9% (CP 99.6-100.0)          [] True  0/2800 = 0.0% (CP 0.0-0.1)          []  True   3590/3600 = 99.7% (CP 99.5-99.9)
+ 128  E0    1955         0.302  True   1853/1955 = 94.8% (CP 93.7-95.7)          [] True  1/1955 = 0.1% (CP 0.0-0.3)          [] False   1727/3200 = 54.0% (CP 52.2-55.7)
+ 128 E1q    1945         0.305  True   1820/1945 = 93.6% (CP 92.4-94.6)          [] True  3/1945 = 0.2% (CP 0.0-0.5)          [] False       129/3203 = 4.0% (CP 3.4-4.8)
+ 128 E4c    1945         0.305  True   1928/1945 = 99.1% (CP 98.6-99.5)          [] True  0/1945 = 0.0% (CP 0.0-0.2)          []  True   3089/3197 = 96.6% (CP 95.9-97.2)
+ 128 E4r    1945         0.305  True   1923/1945 = 98.9% (CP 98.3-99.3)          [] True  0/1945 = 0.0% (CP 0.0-0.2)          []  True   3039/3198 = 95.0% (CP 94.2-95.8)
+ 128  E6    1945         0.305  True   1936/1945 = 99.5% (CP 99.1-99.8)          [] True  0/1945 = 0.0% (CP 0.0-0.2)          [] False   2719/3203 = 84.9% (CP 83.6-86.1)
+ 128  E7    2800         0.000  True   2795/2800 = 99.8% (CP 99.6-99.9)          [] True  0/2800 = 0.0% (CP 0.0-0.1)          []  True   3569/3600 = 99.1% (CP 98.8-99.4)
+ 128  E8    2800         0.000  True 2799/2800 = 100.0% (CP 99.8-100.0)          [] True  0/2800 = 0.0% (CP 0.0-0.1)          []  True 3599/3600 = 100.0% (CP 99.8-100.0)
+GATE 9b(i) E1q realised-crossover coverage wpn128 < wpn32 < wpn8: PASS  wpn 128: 129/3203 = 4.0% (CP 3.4-4.8); wpn 32: 586/3195 = 18.3% (CP 17.0-19.7); wpn 8: 1452/2926 = 49.6% (CP 47.8-51.5)
+GATE 9b(iii) E1q realised-crossover coverage at wpn 128 <= 20%: PASS  wpn 128: 129/3203 = 4.0% (CP 3.4-4.8)
+GATE 9b(ii) E4c controls >= 93% pooled at wpn 8: PASS  1717/1731 = 99.2% (CP 98.6-99.6); cell rule (no control cell CP-upper<93%): ok
+GATE 9b(ii) E4c controls >= 93% pooled at wpn 32: PASS  1909/1928 = 99.0% (CP 98.5-99.4); cell rule (no control cell CP-upper<93%): ok
+GATE 9b(ii) E4c controls >= 93% pooled at wpn 128: PASS  1928/1945 = 99.1% (CP 98.6-99.5); cell rule (no control cell CP-upper<93%): ok
+GATE 9b(ii) E4r controls >= 93% pooled at wpn 8: PASS  1714/1731 = 99.0% (CP 98.4-99.4); cell rule (no control cell CP-upper<93%): ok
+GATE 9b(ii) E4r controls >= 93% pooled at wpn 32: PASS  1907/1930 = 98.8% (CP 98.2-99.2); cell rule (no control cell CP-upper<93%): ok
+GATE 9b(ii) E4r controls >= 93% pooled at wpn 128: PASS  1923/1945 = 98.9% (CP 98.3-99.3); cell rule (no control cell CP-upper<93%): ok
+GATE 9b(ii) E7 controls >= 93% pooled at wpn 8: PASS  2798/2800 = 99.9% (CP 99.7-100.0); cell rule (no control cell CP-upper<93%): ok
+GATE 9b(ii) E7 controls >= 93% pooled at wpn 32: PASS  2796/2800 = 99.9% (CP 99.6-100.0); cell rule (no control cell CP-upper<93%): ok
+GATE 9b(ii) E7 controls >= 93% pooled at wpn 128: PASS  2795/2800 = 99.8% (CP 99.6-99.9); cell rule (no control cell CP-upper<93%): ok
+GATE 9b(ii) E8 controls >= 93% pooled at wpn 8: PASS  2784/2800 = 99.4% (CP 99.1-99.7); cell rule (no control cell CP-upper<93%): ok
+GATE 9b(ii) E8 controls >= 93% pooled at wpn 32: PASS  2796/2800 = 99.9% (CP 99.6-100.0); cell rule (no control cell CP-upper<93%): ok
+GATE 9b(ii) E8 controls >= 93% pooled at wpn 128: PASS  2799/2800 = 100.0% (CP 99.8-100.0); cell rule (no control cell CP-upper<93%): ok
+GATE 9b(iv) E0 C at wpn 32 reproduces (recorded C pass / F pass): PASS  fresh C pass: 1833/1933 = 94.8% (CP 93.7-95.8) cells<93%: []; same function on the ORIGINAL data: C pass (1829/1939 = 94.3% (CP 93.2-95.3)), F pass (5/1939 = 0.3% (CP 0.1-0.6))
+GATE 9b(iv) E0 F at wpn 32 reproduces (recorded C pass / F pass): PASS  fresh F pass: 1/1933 = 0.1% (CP 0.0-0.3) cells>5%: []
+GATE 9b(iv) E1q C at wpn 32 reproduces (recorded C pass / F pass): PASS  fresh C pass: 1799/1930 = 93.2% (CP 92.0-94.3) cells<93%: []; same function on the ORIGINAL data: C pass (1821/1930 = 94.4% (CP 93.2-95.3)), F pass (11/1930 = 0.6% (CP 0.3-1.0))
+GATE 9b(iv) E1q F at wpn 32 reproduces (recorded C pass / F pass): PASS  fresh F pass: 7/1930 = 0.4% (CP 0.1-0.7) cells>5%: []
+GATE 9b(iv) E4c C at wpn 32 reproduces (recorded C pass / F pass): PASS  fresh C pass: 1909/1928 = 99.0% (CP 98.5-99.4) cells<93%: []; same function on the ORIGINAL data: C pass (1921/1929 = 99.6% (CP 99.2-99.8)), F pass (0/1929 = 0.0% (CP 0.0-0.2))
+GATE 9b(iv) E4c F at wpn 32 reproduces (recorded C pass / F pass): PASS  fresh F pass: 0/1928 = 0.0% (CP 0.0-0.2) cells>5%: []
+GATE 9b(iv) E4r C at wpn 32 reproduces (recorded C pass / F pass): PASS  fresh C pass: 1907/1930 = 98.8% (CP 98.2-99.2) cells<93%: []; same function on the ORIGINAL data: C pass (1915/1930 = 99.2% (CP 98.7-99.6)), F pass (0/1930 = 0.0% (CP 0.0-0.2))
+GATE 9b(iv) E4r F at wpn 32 reproduces (recorded C pass / F pass): PASS  fresh F pass: 0/1930 = 0.0% (CP 0.0-0.2) cells>5%: []
+GATE 9b(iv) E6 C at wpn 32 reproduces (recorded C pass / F pass): PASS  fresh C pass: 1922/1930 = 99.6% (CP 99.2-99.8) cells<93%: []; same function on the ORIGINAL data: C pass (1922/1930 = 99.6% (CP 99.2-99.8)), F pass (0/1930 = 0.0% (CP 0.0-0.2))
+GATE 9b(iv) E6 F at wpn 32 reproduces (recorded C pass / F pass): PASS  fresh F pass: 0/1930 = 0.0% (CP 0.0-0.2) cells>5%: []
+GATE 9b(iv) E7 C at wpn 32 reproduces (recorded C pass / F pass): PASS  fresh C pass: 2796/2800 = 99.9% (CP 99.6-100.0) cells<93%: []; same function on the ORIGINAL data: C pass (2795/2800 = 99.8% (CP 99.6-99.9)), F pass (0/2800 = 0.0% (CP 0.0-0.1))
+GATE 9b(iv) E7 F at wpn 32 reproduces (recorded C pass / F pass): PASS  fresh F pass: 0/2800 = 0.0% (CP 0.0-0.1) cells>5%: []
+GATE 9b(iv) E8 C at wpn 32 reproduces (recorded C pass / F pass): PASS  fresh C pass: 2796/2800 = 99.9% (CP 99.6-100.0) cells<93%: []; same function on the ORIGINAL data: C pass (2791/2800 = 99.7% (CP 99.4-99.9)), F pass (0/2800 = 0.0% (CP 0.0-0.1))
+GATE 9b(iv) E8 F at wpn 32 reproduces (recorded C pass / F pass): PASS  fresh F pass: 0/2800 = 0.0% (CP 0.0-0.1) cells>5%: []
+VERDICT 9b: ALL gated predictions hold
+--- 9b ungated: min L (power>=0.8 here and above; abstention = miss) on the realised-crossover cells run here (grid = the 9 sizes per family; sizes below the first are not run)
+ wpn arm   aniso3_w8  aniso2_w16                               xcov
+   8  E0         112         224   2589/3185 = 81.3% (CP 79.9-82.6)
+   8 E1q         128         384   1452/2926 = 49.6% (CP 47.8-51.5)
+   8 E4c not reached not reached   2865/2925 = 97.9% (CP 97.4-98.4)
+   8 E4r not reached not reached   2811/2926 = 96.1% (CP 95.3-96.7)
+   8  E6         192         512   2896/2926 = 99.0% (CP 98.5-99.3)
+   8  E7 not reached not reached   3577/3600 = 99.4% (CP 99.0-99.6)
+   8  E8 not reached not reached   3581/3600 = 99.5% (CP 99.2-99.7)
+  32  E0          80         192   2163/3204 = 67.5% (CP 65.9-69.1)
+  32 E1q          80         224    586/3195 = 18.3% (CP 17.0-19.7)
+  32 E4c         160 not reached   3079/3193 = 96.4% (CP 95.7-97.0)
+  32 E4r         160         768   3033/3195 = 94.9% (CP 94.1-95.7)
+  32  E6          96         224   3054/3195 = 95.6% (CP 94.8-96.3)
+  32  E7         256 not reached   3560/3600 = 98.9% (CP 98.5-99.2)
+  32  E8 not reached not reached   3590/3600 = 99.7% (CP 99.5-99.9)
+ 128  E0          80         160   1727/3200 = 54.0% (CP 52.2-55.7)
+ 128 E1q          80         160       129/3203 = 4.0% (CP 3.4-4.8)
+ 128 E4c         112         320   3089/3197 = 96.6% (CP 95.9-97.2)
+ 128 E4r         112         320   3039/3198 = 95.0% (CP 94.2-95.8)
+ 128  E6          80         160   2719/3203 = 84.9% (CP 83.6-86.1)
+ 128  E7          96         768   3569/3600 = 99.1% (CP 98.8-99.4)
+ 128  E8         112 not reached 3599/3600 = 100.0% (CP 99.8-100.0)
+==================== 9c: second design (grid 24*2^(j/4), count>=100, N q>=10, J>=8; wpn 32; fresh seeds)
+GATE 9c E0 C: new FAIL (1801/1937 = 93.0% (CP 91.7-94.1)) vs original PASS (1829/1939 = 94.3% (CP 93.2-95.3)) -> DIFFERENT
+GATE 9c E0 F: new PASS (3/1937 = 0.2% (CP 0.0-0.5)) vs original PASS (5/1939 = 0.3% (CP 0.1-0.6)) -> EQUAL
+GATE 9c E0 X: new FAIL (2404/3032 = 79.3% (CP 77.8-80.7)) vs original FAIL (2020/2615 = 77.2% (CP 75.6-78.8)) -> EQUAL
+GATE 9c E1q C: new PASS (1790/1920 = 93.2% (CP 92.0-94.3)) vs original PASS (1821/1930 = 94.4% (CP 93.2-95.3)) -> EQUAL
+GATE 9c E1q F: new PASS (7/1920 = 0.4% (CP 0.1-0.7)) vs original PASS (11/1930 = 0.6% (CP 0.3-1.0)) -> EQUAL
+GATE 9c E1q X: new FAIL (999/3027 = 33.0% (CP 31.3-34.7)) vs original FAIL (613/2609 = 23.5% (CP 21.9-25.2)) -> EQUAL
+GATE 9c E4c C: new PASS (1884/1920 = 98.1% (CP 97.4-98.7)) vs original PASS (1921/1929 = 99.6% (CP 99.2-99.8)) -> EQUAL
+GATE 9c E4c F: new PASS (0/1920 = 0.0% (CP 0.0-0.2)) vs original PASS (0/1929 = 0.0% (CP 0.0-0.2)) -> EQUAL
+GATE 9c E4c X: new PASS (2936/3027 = 97.0% (CP 96.3-97.6)) vs original PASS (3099/3205 = 96.7% (CP 96.0-97.3)) -> EQUAL
+GATE 9c E6 C: new PASS (1898/1920 = 98.9% (CP 98.3-99.3)) vs original PASS (1922/1930 = 99.6% (CP 99.2-99.8)) -> EQUAL
+GATE 9c E6 F: new PASS (0/1920 = 0.0% (CP 0.0-0.2)) vs original PASS (0/1930 = 0.0% (CP 0.0-0.2)) -> EQUAL
+GATE 9c E6 X: new PASS (2780/3027 = 91.8% (CP 90.8-92.8)) vs original PASS (3066/3209 = 95.5% (CP 94.8-96.2)) -> EQUAL
+GATE 9c E7 C: new PASS (1935/1937 = 99.9% (CP 99.6-100.0)) vs original PASS (2795/2800 = 99.8% (CP 99.6-99.9)) -> EQUAL
+GATE 9c E7 F: new PASS (0/1937 = 0.0% (CP 0.0-0.2)) vs original PASS (0/2800 = 0.0% (CP 0.0-0.1)) -> EQUAL
+GATE 9c E7 X: new PASS (3006/3032 = 99.1% (CP 98.7-99.4)) vs original PASS (3556/3600 = 98.8% (CP 98.4-99.1)) -> EQUAL
+GATE 9c E8 C: new PASS (1907/1937 = 98.5% (CP 97.8-99.0)) vs original PASS (2791/2800 = 99.7% (CP 99.4-99.9)) -> EQUAL
+GATE 9c E8 F: new PASS (0/1937 = 0.0% (CP 0.0-0.2)) vs original PASS (0/2800 = 0.0% (CP 0.0-0.1)) -> EQUAL
+GATE 9c E8 X: new PASS (2996/3032 = 98.8% (CP 98.4-99.2)) vs original PASS (3591/3600 = 99.8% (CP 99.5-99.9)) -> EQUAL
+min L E0: 3D new 112 orig 80; 2D new 256 orig 192; power new 3D 32:0.00 48:0.00 64:0.00 80:0.15 96:0.71 112:0.97 128:1.00 160:1.00 192:1.00 256:1.00; 2D 128:0.01 160:0.04 192:0.19 224:0.72 256:0.97 320:1.00 384:1.00 512:1.00 768:1.00
+min L E1q: 3D new 112 orig 96; 2D new 256 orig 192; power new 3D 32:0.00 48:0.00 64:0.00 80:0.10 96:0.52 112:0.89 128:0.98 160:1.00 192:1.00 256:1.00; 2D 128:0.01 160:0.05 192:0.13 224:0.50 256:0.84 320:0.99 384:0.99 512:1.00 768:1.00
+min L E4c: 3D new 192 orig 192; 2D new 768 orig not reached; power new 3D 32:0.00 48:0.00 64:0.00 80:0.00 96:0.03 112:0.12 128:0.31 160:0.70 192:0.86 256:0.97; 2D 128:0.00 160:0.00 192:0.01 224:0.04 256:0.10 320:0.24 384:0.47 512:0.56 768:0.86
+min L E6: 3D new 128 orig 96; 2D new 320 orig 224; power new 3D 32:0.00 48:0.00 64:0.00 80:0.01 96:0.14 112:0.58 128:0.90 160:0.99 192:1.00 256:1.00; 2D 128:0.00 160:0.00 192:0.01 224:0.17 256:0.53 320:0.99 384:1.00 512:1.00 768:1.00
+min L E7: 3D new 256 orig 256; 2D new not reached orig not reached; power new 3D 32:0.00 48:0.00 64:0.00 80:0.00 96:0.00 112:0.01 128:0.06 160:0.39 192:0.66 256:0.97; 2D 128:0.00 160:0.00 192:0.00 224:0.00 256:0.00 320:0.00 384:0.00 512:0.00 768:0.00
+min L E8: 3D new not reached orig not reached; 2D new not reached orig not reached; power new 3D 32:0.00 48:0.00 64:0.00 80:0.00 96:0.00 112:0.03 128:0.07 160:0.25 192:0.36 256:0.58; 2D 128:0.00 160:0.00 192:0.00 224:0.00 256:0.01 320:0.00 384:0.01 512:0.03 768:0.04
+GATE 9c order E4c vs E1q aniso3_w8: original E4c worse (larger L) (E4c 192, E1q 96); new E4c worse (larger L) (E4c 192, E1q 112) -> UNCHANGED (ties allowed)
+GATE 9c order E4c vs E1q aniso2_w16: original E4c worse (larger L) (E4c not reached, E1q 192); new E4c worse (larger L) (E4c 768, E1q 256) -> UNCHANGED (ties allowed)
+GATE 9c order E4c vs E6 aniso3_w8: original E4c worse (larger L) (E4c 192, E6 96); new E4c worse (larger L) (E4c 192, E6 128) -> UNCHANGED (ties allowed)
+GATE 9c order E4c vs E6 aniso2_w16: original E4c worse (larger L) (E4c not reached, E6 224); new E4c worse (larger L) (E4c 768, E6 320) -> UNCHANGED (ties allowed)
+GATE 9c order E4c vs E7 aniso3_w8: original E4c better (smaller L) (E4c 192, E7 256); new E4c better (smaller L) (E4c 192, E7 256) -> UNCHANGED (ties allowed)
+GATE 9c order E4c vs E7 aniso2_w16: original tie (E4c not reached, E7 not reached); new E4c better (smaller L) (E4c 768, E7 not reached) -> UNCHANGED (ties allowed) [not strictly identical: a tie involved]
+VERDICT 9c: gate FAIL: 1 of 24 checks differ
+--- 9c ungated: window/abstention  E0 control abstain 0.308; E1q control abstain 0.314; E4c control abstain 0.314; E6 control abstain 0.314; E7 control abstain 0.308; E8 control abstain 0.308

@@ -1,0 +1,9 @@
+{
+ "datasets": 1030,
+ "B_ok": 1029,
+ "Bj_nbad_gt0": 0,
+ "Bj_amb_gt0": 428,
+ "Bj_decl_drop": 570,
+ "Bj_decl_rise": 12,
+ "total_lp": 370259
+}

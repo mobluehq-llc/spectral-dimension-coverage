@@ -1,0 +1,83 @@
+# 10a: margin-consistent false-change scoring (original non-realised crossover cells)
+true change: declared sign matches and exact excursion (d(t_j)-d(t_0)) beyond 0.25 in that direction at some t_j in the estimator's own tested window; false change: declared otherwise (wrong sign counts as false).
+tested window: E1q = ts[:J] (J per dataset); E0 = ts[:J]; E3/CL = grid times <= tlast of the largest graph, tlast = tsplit^2/24 (tsplit = sqrt(24 tlast) by construction). Excursion taken vs the first grid point t_0=24.
+sensitivity: the same scoring with the excursion defined as d(late centre)-d(early centre) (E3/CL: region centres of the collapse window; E0: segment centres).
+exact excursion over the whole collapse window per cell:
+  cell 14 aniso2_w16 L=32  max_drop(Nq>=6 window, plan)=0.0047 ; grid 24..544 ; d(t)-d(24) min over grid<=1.05-window: see rows
+  cell 15 aniso2_w16 L=48  max_drop(Nq>=6 window, plan)=0.0214 ; grid 24..1088 ; d(t)-d(24) min over grid<=1.05-window: see rows
+  cell 16 aniso2_w16 L=64  max_drop(Nq>=6 window, plan)=0.1083 ; grid 24..2176 ; d(t)-d(24) min over grid<=1.05-window: see rows
+  cell 17 aniso2_w16 L=96  max_drop(Nq>=6 window, plan)=0.3387 ; grid 24..4352 ; d(t)-d(24) min over grid<=1.05-window: see rows
+  cell 21 aniso3_w8 L=32  max_drop(Nq>=6 window, plan)=0.5725 ; grid 24..768 ; d(t)-d(24) min over grid<=1.05-window: see rows
+
+## E3
+  cell 14 aniso2_w16 L=32  drop(plan)=0.005 | abstain 1, non-abstained 199, median exact min-excursion over window -1.336 | no-decl 196 | TRUE 2/199 = 1.0% (CP 0.1-3.6) | FALSE 1/199 = 0.5% (CP 0.0-2.8) | declared 3/199 = 1.5% (CP 0.3-4.3)
+  cell 15 aniso2_w16 L=48  drop(plan)=0.021 | abstain 0, non-abstained 200, median exact min-excursion over window -1.242 | no-decl 173 | TRUE 27/200 = 13.5% (CP 9.1-19.0) | FALSE 0/200 = 0.0% (CP 0.0-1.8) | declared 27/200 = 13.5% (CP 9.1-19.0)
+  cell 16 aniso2_w16 L=64  drop(plan)=0.108 | abstain 0, non-abstained 200, median exact min-excursion over window -1.338 | no-decl 98 | TRUE 102/200 = 51.0% (CP 43.9-58.1) | FALSE 0/200 = 0.0% (CP 0.0-1.8) | declared 102/200 = 51.0% (CP 43.9-58.1)
+  cell 17 aniso2_w16 L=96  drop(plan)=0.339 | abstain 0, non-abstained 200, median exact min-excursion over window -1.243 | no-decl 14 | TRUE 186/200 = 93.0% (CP 88.5-96.1) | FALSE 0/200 = 0.0% (CP 0.0-1.8) | declared 186/200 = 93.0% (CP 88.5-96.1)
+  cell 21 aniso3_w8  L=32  drop(plan)=0.573 | abstain 0, non-abstained 200, median exact min-excursion over window -2.303 | no-decl 43 | TRUE 157/200 = 78.5% (CP 72.2-84.0) | FALSE 0/200 = 0.0% (CP 0.0-1.8) | declared 157/200 = 78.5% (CP 72.2-84.0)
+
+## E0
+  cell 14 aniso2_w16 L=32  drop(plan)=0.005 | abstain 200, non-abstained 0, median exact min-excursion over window nan | no-decl 0 | TRUE 0/0 = 0.0% (CP nan-nan) | FALSE 0/0 = 0.0% (CP nan-nan) | declared 0/0 = 0.0% (CP nan-nan)
+  cell 15 aniso2_w16 L=48  drop(plan)=0.021 | abstain 200, non-abstained 0, median exact min-excursion over window nan | no-decl 0 | TRUE 0/0 = 0.0% (CP nan-nan) | FALSE 0/0 = 0.0% (CP nan-nan) | declared 0/0 = 0.0% (CP nan-nan)
+  cell 16 aniso2_w16 L=64  drop(plan)=0.108 | abstain 199, non-abstained 1, median exact min-excursion over window -0.002 | no-decl 0 | TRUE 0/1 = 0.0% (CP 0.0-97.5) | FALSE 1/1 = 100.0% (CP 2.5-100.0) | declared 1/1 = 100.0% (CP 2.5-100.0)
+  cell 17 aniso2_w16 L=96  drop(plan)=0.339 | abstain 0, non-abstained 200, median exact min-excursion over window -0.002 | no-decl 190 | TRUE 0/200 = 0.0% (CP 0.0-1.8) | FALSE 10/200 = 5.0% (CP 2.4-9.0) | declared 10/200 = 5.0% (CP 2.4-9.0)
+  cell 21 aniso3_w8  L=32  drop(plan)=0.573 | abstain 200, non-abstained 0, median exact min-excursion over window nan | no-decl 0 | TRUE 0/0 = 0.0% (CP nan-nan) | FALSE 0/0 = 0.0% (CP nan-nan) | declared 0/0 = 0.0% (CP nan-nan)
+
+## E1q
+  cell 14 aniso2_w16 L=32  drop(plan)=0.005 | abstain 200, non-abstained 0, median exact min-excursion over window nan | no-decl 0 | TRUE 0/0 = 0.0% (CP nan-nan) | FALSE 0/0 = 0.0% (CP nan-nan) | declared 0/0 = 0.0% (CP nan-nan)
+  cell 15 aniso2_w16 L=48  drop(plan)=0.021 | abstain 200, non-abstained 0, median exact min-excursion over window nan | no-decl 0 | TRUE 0/0 = 0.0% (CP nan-nan) | FALSE 0/0 = 0.0% (CP nan-nan) | declared 0/0 = 0.0% (CP nan-nan)
+  cell 16 aniso2_w16 L=64  drop(plan)=0.108 | abstain 195, non-abstained 5, median exact min-excursion over window -0.339 | no-decl 5 | TRUE 0/5 = 0.0% (CP 0.0-52.2) | FALSE 0/5 = 0.0% (CP 0.0-52.2) | declared 0/5 = 0.0% (CP 0.0-52.2)
+  cell 17 aniso2_w16 L=96  drop(plan)=0.339 | abstain 2, non-abstained 198, median exact min-excursion over window -0.339 | no-decl 193 | TRUE 3/198 = 1.5% (CP 0.3-4.4) | FALSE 2/198 = 1.0% (CP 0.1-3.6) | declared 5/198 = 2.5% (CP 0.8-5.8)
+  cell 21 aniso3_w8  L=32  drop(plan)=0.573 | abstain 200, non-abstained 0, median exact min-excursion over window nan | no-decl 0 | TRUE 0/0 = 0.0% (CP nan-nan) | FALSE 0/0 = 0.0% (CP nan-nan) | declared 0/0 = 0.0% (CP nan-nan)
+
+## CL
+  cell 14 aniso2_w16 L=32  drop(plan)=0.005 | abstain 4, non-abstained 196, median exact min-excursion over window -1.336 | no-decl 175 | TRUE 21/196 = 10.7% (CP 6.8-15.9) | FALSE 0/196 = 0.0% (CP 0.0-1.9) | declared 21/196 = 10.7% (CP 6.8-15.9)
+  cell 15 aniso2_w16 L=48  drop(plan)=0.021 | abstain 0, non-abstained 200, median exact min-excursion over window -1.242 | no-decl 143 | TRUE 57/200 = 28.5% (CP 22.4-35.3) | FALSE 0/200 = 0.0% (CP 0.0-1.8) | declared 57/200 = 28.5% (CP 22.4-35.3)
+  cell 16 aniso2_w16 L=64  drop(plan)=0.108 | abstain 0, non-abstained 200, median exact min-excursion over window -1.338 | no-decl 111 | TRUE 89/200 = 44.5% (CP 37.5-51.7) | FALSE 0/200 = 0.0% (CP 0.0-1.8) | declared 89/200 = 44.5% (CP 37.5-51.7)
+  cell 17 aniso2_w16 L=96  drop(plan)=0.339 | abstain 0, non-abstained 200, median exact min-excursion over window -1.243 | no-decl 57 | TRUE 143/200 = 71.5% (CP 64.7-77.6) | FALSE 0/200 = 0.0% (CP 0.0-1.8) | declared 143/200 = 71.5% (CP 64.7-77.6)
+  cell 21 aniso3_w8  L=32  drop(plan)=0.573 | abstain 0, non-abstained 200, median exact min-excursion over window -2.303 | no-decl 93 | TRUE 107/200 = 53.5% (CP 46.3-60.6) | FALSE 0/200 = 0.0% (CP 0.0-1.8) | declared 107/200 = 53.5% (CP 46.3-60.6)
+
+## pooled sets (false-change rate; bar: >=20%% and CP-lower >10%% with >=30 non-abstained)
+
+near-flat, plan wording 'drop <= 0.02' read as the two cells with drop 0.005 and 0.021 (ids 14,15)
+  E3   false 1/399 = 0.3% (CP 0.0-1.4) | true 29/399 = 7.3% (CP 4.9-10.3) | n=399 -> bar NOT met
+       sensitivity (excursion between the two regions' log-mean centres instead of the window): false 1/399 = 0.3% (CP 0.0-1.4), true 29
+  E0   false 0/0 = 0.0% (CP nan-nan) | true 0/0 = 0.0% (CP nan-nan) | n=0 -> n<30: cannot assess (bar requires >=30)
+       sensitivity (excursion between the two regions' log-mean centres instead of the window): false 0/0 = 0.0% (CP nan-nan), true 0
+  E1q  false 0/0 = 0.0% (CP nan-nan) | true 0/0 = 0.0% (CP nan-nan) | n=0 -> n<30: cannot assess (bar requires >=30)
+       sensitivity (excursion between the two regions' log-mean centres instead of the window): false 0/0 = 0.0% (CP nan-nan), true 0
+  CL   false 0/396 = 0.0% (CP 0.0-0.9) | true 78/396 = 19.7% (CP 15.9-24.0) | n=396 -> bar NOT met
+       sensitivity (excursion between the two regions' log-mean centres instead of the window): false 0/396 = 0.0% (CP 0.0-0.9), true 78
+
+near-flat, strictly drop <= 0.02 (id 14 only)
+  E3   false 1/199 = 0.5% (CP 0.0-2.8) | true 2/199 = 1.0% (CP 0.1-3.6) | n=199 -> bar NOT met
+       sensitivity (excursion between the two regions' log-mean centres instead of the window): false 1/199 = 0.5% (CP 0.0-2.8), true 2
+  E0   false 0/0 = 0.0% (CP nan-nan) | true 0/0 = 0.0% (CP nan-nan) | n=0 -> n<30: cannot assess (bar requires >=30)
+       sensitivity (excursion between the two regions' log-mean centres instead of the window): false 0/0 = 0.0% (CP nan-nan), true 0
+  E1q  false 0/0 = 0.0% (CP nan-nan) | true 0/0 = 0.0% (CP nan-nan) | n=0 -> n<30: cannot assess (bar requires >=30)
+       sensitivity (excursion between the two regions' log-mean centres instead of the window): false 0/0 = 0.0% (CP nan-nan), true 0
+  CL   false 0/196 = 0.0% (CP 0.0-1.9) | true 21/196 = 10.7% (CP 6.8-15.9) | n=196 -> bar NOT met
+       sensitivity (excursion between the two regions' log-mean centres instead of the window): false 0/196 = 0.0% (CP 0.0-1.9), true 21
+
+all five non-realised cells
+  E3   false 1/999 = 0.1% (CP 0.0-0.6) | true 474/999 = 47.4% (CP 44.3-50.6) | n=999 -> bar NOT met
+       sensitivity (excursion between the two regions' log-mean centres instead of the window): false 1/999 = 0.1% (CP 0.0-0.6), true 474
+  E0   false 11/201 = 5.5% (CP 2.8-9.6) | true 0/201 = 0.0% (CP 0.0-1.8) | n=201 -> bar NOT met
+       sensitivity (excursion between the two regions' log-mean centres instead of the window): false 11/201 = 5.5% (CP 2.8-9.6), true 0
+  E1q  false 2/203 = 1.0% (CP 0.1-3.5) | true 3/203 = 1.5% (CP 0.3-4.3) | n=203 -> bar NOT met
+       sensitivity (excursion between the two regions' log-mean centres instead of the window): false 5/203 = 2.5% (CP 0.8-5.7), true 0
+  CL   false 0/996 = 0.0% (CP 0.0-0.4) | true 417/996 = 41.9% (CP 38.8-45.0) | n=996 -> bar NOT met
+       sensitivity (excursion between the two regions' log-mean centres instead of the window): false 0/996 = 0.0% (CP 0.0-0.4), true 417
+
+drop 0.34 and 0.57 cells (ids 17,21)
+  E3   false 0/400 = 0.0% (CP 0.0-0.9) | true 343/400 = 85.8% (CP 81.9-89.0) | n=400 -> bar NOT met
+       sensitivity (excursion between the two regions' log-mean centres instead of the window): false 0/400 = 0.0% (CP 0.0-0.9), true 343
+  E0   false 10/200 = 5.0% (CP 2.4-9.0) | true 0/200 = 0.0% (CP 0.0-1.8) | n=200 -> bar NOT met
+       sensitivity (excursion between the two regions' log-mean centres instead of the window): false 10/200 = 5.0% (CP 2.4-9.0), true 0
+  E1q  false 2/198 = 1.0% (CP 0.1-3.6) | true 3/198 = 1.5% (CP 0.3-4.4) | n=198 -> bar NOT met
+       sensitivity (excursion between the two regions' log-mean centres instead of the window): false 5/198 = 2.5% (CP 0.8-5.8), true 0
+  CL   false 0/400 = 0.0% (CP 0.0-0.9) | true 250/400 = 62.5% (CP 57.6-67.3) | n=400 -> bar NOT met
+       sensitivity (excursion between the two regions' log-mean centres instead of the window): false 0/400 = 0.0% (CP 0.0-0.9), true 250
+
+VERDICT 10a (plan wording read as ids 14,15): E3: headline NOT SUPPORTED: bar fails (n=399); E0: NOT ASSESSABLE n=0<30 (all abstain); E1q: NOT ASSESSABLE n=0<30 (all abstain); CL: headline NOT SUPPORTED: bar fails (n=396)
+VERDICT 10a (strict <=0.02, id 14 only): E3: headline NOT SUPPORTED: bar fails (n=199); E0: NOT ASSESSABLE n=0<30 (all abstain); E1q: NOT ASSESSABLE n=0<30 (all abstain); CL: headline NOT SUPPORTED: bar fails (n=196)

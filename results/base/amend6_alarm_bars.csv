@@ -1,0 +1,4 @@
+alarm,a_pooled_P_alarm_given_miss,a_pass,b_twostep320_P_alarm_given_miss,b_pass,c_control_alarm,c_pass,d_xover_power_E6,d_power_E6g,d_loss_points,d_pass,ALL_PASS
+A1 E6-vs-E4c band disagreement,0.7 (0.1-2.0)  [misses 441],False,1.6 (0.3-4.5)  [misses 193],False,0.0 (0.0-0.2),True,0.569,0.569,0.0,True,False
+A2 one-vs-two-step (fallback),36.5 (32.0-41.2)  [misses 441],False,56.0 (48.7-63.1)  [misses 193],False,3.3 (2.6-4.2),True,0.569,0.555,1.4,True,False
+"LoF (Amendment 5, for reference)",18.8 (15.3-22.8)  [misses 441],False,30.6 (24.2-37.6)  [misses 193],False,3.7 (2.9-4.7),True,0.569,0.552,1.6,True,False

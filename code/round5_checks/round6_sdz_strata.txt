@@ -1,0 +1,3 @@
+V0_baseline strata 27 J values [13, 14] datasets per J [(13, 359), (14, 569)] SD(z) range 1.052-1.283 median 1.165
+V1_B1000 strata 27 J values [13, 14] datasets per J [(13, 359), (14, 569)] SD(z) range 0.995-1.215 median 1.124
+V2_split_A strata 27 J values [13, 14] datasets per J [(13, 359), (14, 569)] SD(z) range 1.058-1.296 median 1.166

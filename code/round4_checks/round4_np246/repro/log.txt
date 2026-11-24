@@ -1,0 +1,29 @@
+{
+ "amendment": "9b",
+ "cell": "ring L=128 id=9000 wpn=32 (control)",
+ "columns_compared": 55,
+ "counts": {
+  "big": 0,
+  "both_nan": 2657,
+  "disc_bad": 0,
+  "disc_exact": 576,
+  "exact": 603,
+  "str_bad": 0,
+  "str_exact": 14,
+  "tol1e6": 0,
+  "tol1e9": 0
+ },
+ "datasets": 10,
+ "discrete_mismatch_by_column_est": {},
+ "excluded_timing_columns": true,
+ "finished": "2026-11-23 19:22:17",
+ "float_diffs_gt_1e6_by_column_est": {},
+ "rows_matched_to_stored": 70,
+ "rows_rerun": 70,
+ "seconds": 5.2,
+ "stored_file": "raw_amend9_b32.csv",
+ "stored_sha256": "cf5bfd10459c6283659d14faf95ecc40d135ebfd0e883f4ae9124018c44e8bb9",
+ "verdict": "MATCH_EXACT",
+ "worst_abs_diff_nondiscrete": 0.0,
+ "worst_rel_diff_gt1e6": 0.0
+}

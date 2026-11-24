@@ -1,0 +1,257 @@
+{
+ "cells": {
+  "aniso2_w16_128": {
+   "L": 128,
+   "N": 2048,
+   "exact_J_wpn32": 8,
+   "exact_window_end": 272,
+   "fam": "aniso2_w16",
+   "ids": {
+    "128": 9223,
+    "32": 9023,
+    "8": 9123
+   },
+   "max_drop": 0.8933336360709865,
+   "realised": true
+  },
+  "aniso2_w16_160": {
+   "L": 160,
+   "N": 2560,
+   "exact_J_wpn32": 9,
+   "exact_window_end": 384,
+   "fam": "aniso2_w16",
+   "ids": {
+    "128": 9224,
+    "32": 9024,
+    "8": 9124
+   },
+   "max_drop": 0.9854714421984982,
+   "realised": true
+  },
+  "aniso2_w16_192": {
+   "L": 192,
+   "N": 3072,
+   "exact_J_wpn32": 10,
+   "exact_window_end": 544,
+   "fam": "aniso2_w16",
+   "ids": {
+    "128": 9225,
+    "32": 9025,
+    "8": 9125
+   },
+   "max_drop": 1.002713346414109,
+   "realised": true
+  },
+  "aniso2_w16_224": {
+   "L": 224,
+   "N": 3584,
+   "exact_J_wpn32": 11,
+   "exact_window_end": 768,
+   "fam": "aniso2_w16",
+   "ids": {
+    "128": 9226,
+    "32": 9026,
+    "8": 9126
+   },
+   "max_drop": 1.0040231566036606,
+   "realised": true
+  },
+  "aniso2_w16_256": {
+   "L": 256,
+   "N": 4096,
+   "exact_J_wpn32": 12,
+   "exact_window_end": 1088,
+   "fam": "aniso2_w16",
+   "ids": {
+    "128": 9227,
+    "32": 9027,
+    "8": 9127
+   },
+   "max_drop": 1.0041429394301133,
+   "realised": true
+  },
+  "aniso2_w16_320": {
+   "L": 320,
+   "N": 5120,
+   "exact_J_wpn32": 13,
+   "exact_window_end": 1536,
+   "fam": "aniso2_w16",
+   "ids": {
+    "128": 9228,
+    "32": 9028,
+    "8": 9128
+   },
+   "max_drop": 1.0042106622772282,
+   "realised": true
+  },
+  "aniso2_w16_384": {
+   "L": 384,
+   "N": 6144,
+   "exact_J_wpn32": 14,
+   "exact_window_end": 2176,
+   "fam": "aniso2_w16",
+   "ids": {
+    "128": 9229,
+    "32": 9029,
+    "8": 9129
+   },
+   "max_drop": 1.0042588532046737,
+   "realised": true
+  },
+  "aniso2_w16_512": {
+   "L": 512,
+   "N": 8192,
+   "exact_J_wpn32": 16,
+   "exact_window_end": 4352,
+   "fam": "aniso2_w16",
+   "ids": {
+    "128": 9230,
+    "32": 9030,
+    "8": 9130
+   },
+   "max_drop": 1.0043165362233712,
+   "realised": true
+  },
+  "aniso2_w16_768": {
+   "L": 768,
+   "N": 12288,
+   "exact_J_wpn32": 18,
+   "exact_window_end": 8704,
+   "fam": "aniso2_w16",
+   "ids": {
+    "128": 9231,
+    "32": 9031,
+    "8": 9131
+   },
+   "max_drop": 1.0043453181197755,
+   "realised": true
+  },
+  "aniso3_w8_112": {
+   "L": 112,
+   "N": 7168,
+   "exact_J_wpn32": 8,
+   "exact_window_end": 272,
+   "fam": "aniso3_w8",
+   "ids": {
+    "128": 9218,
+    "32": 9018,
+    "8": 9118
+   },
+   "max_drop": 2.0187252370845576,
+   "realised": true
+  },
+  "aniso3_w8_128": {
+   "L": 128,
+   "N": 8192,
+   "exact_J_wpn32": 9,
+   "exact_window_end": 384,
+   "fam": "aniso3_w8",
+   "ids": {
+    "128": 9219,
+    "32": 9019,
+    "8": 9119
+   },
+   "max_drop": 2.0196938067713326,
+   "realised": true
+  },
+  "aniso3_w8_160": {
+   "L": 160,
+   "N": 10240,
+   "exact_J_wpn32": 10,
+   "exact_window_end": 544,
+   "fam": "aniso3_w8",
+   "ids": {
+    "128": 9220,
+    "32": 9020,
+    "8": 9120
+   },
+   "max_drop": 2.0202863985645645,
+   "realised": true
+  },
+  "aniso3_w8_192": {
+   "L": 192,
+   "N": 12288,
+   "exact_J_wpn32": 11,
+   "exact_window_end": 768,
+   "fam": "aniso3_w8",
+   "ids": {
+    "128": 9221,
+    "32": 9021,
+    "8": 9121
+   },
+   "max_drop": 2.0206970890375286,
+   "realised": true
+  },
+  "aniso3_w8_256": {
+   "L": 256,
+   "N": 16384,
+   "exact_J_wpn32": 13,
+   "exact_window_end": 1536,
+   "fam": "aniso3_w8",
+   "ids": {
+    "128": 9222,
+    "32": 9022,
+    "8": 9122
+   },
+   "max_drop": 2.021191803627699,
+   "realised": true
+  },
+  "aniso3_w8_48": {
+   "L": 48,
+   "N": 3072,
+   "exact_J_wpn32": 4,
+   "exact_window_end": 68,
+   "fam": "aniso3_w8",
+   "ids": {
+    "128": 9214,
+    "32": 9014,
+    "8": 9114
+   },
+   "max_drop": 1.186934801244872,
+   "realised": true
+  },
+  "aniso3_w8_64": {
+   "L": 64,
+   "N": 4096,
+   "exact_J_wpn32": 5,
+   "exact_window_end": 96,
+   "fam": "aniso3_w8",
+   "ids": {
+    "128": 9215,
+    "32": 9015,
+    "8": 9115
+   },
+   "max_drop": 1.7120975603915638,
+   "realised": true
+  },
+  "aniso3_w8_80": {
+   "L": 80,
+   "N": 5120,
+   "exact_J_wpn32": 6,
+   "exact_window_end": 136,
+   "fam": "aniso3_w8",
+   "ids": {
+    "128": 9216,
+    "32": 9016,
+    "8": 9116
+   },
+   "max_drop": 1.9572928185764698,
+   "realised": true
+  },
+  "aniso3_w8_96": {
+   "L": 96,
+   "N": 6144,
+   "exact_J_wpn32": 7,
+   "exact_window_end": 192,
+   "fam": "aniso3_w8",
+   "ids": {
+    "128": 9217,
+    "32": 9017,
+    "8": 9117
+   },
+   "max_drop": 2.0126046310571333,
+   "realised": true
+  }
+ },
+ "rule": "J fixed per cell = exact window (Nq >= thr from the exact curve) = wpn-32 exact_J, computed before any simulation"
+}

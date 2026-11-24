@@ -1,0 +1,8 @@
+set,n,version,no_band,atom_sensitive,covered_with_band,band_not_covered
+170 atom-sensitive ids (Table IV selection rule),170,"T (Table IV, host-T)",9,170.0,161,0
+170 atom-sensitive ids (Table IV selection rule),170,"D (10b original, host-D)",3,14.0,167,0
+170 atom-sensitive ids (Table IV selection rule),170,"D (10b certified B, host-D)",0,,170,0
+1030 ids of Amendment 10b,1030,"T (Table IV, host-T)",18,170.0,1012,0
+1030 ids of Amendment 10b,1030,"D (10b original, host-D)",6,44.0,1024,0
+1030 ids of Amendment 10b,1030,"D (10b certified B, host-D)",1,,1029,0
+all 9400 datasets,9400,"T (Table IV, host-T)",66,170.0,9332,2

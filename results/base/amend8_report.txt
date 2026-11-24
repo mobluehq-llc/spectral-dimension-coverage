@@ -1,0 +1,87 @@
+=== E7 (wpn 32)
+(C) control simultaneous coverage 2795/2800 = 99.8% (CP 99.6-99.9); control cells with CP-upper<93%: [] -> PASS
+(F) FPR margin 0.25 any-sign 0/2800 = 0.0% (CP 0.0-0.1); cells with CP-lower>5%: [] -> PASS
+(X) realised-crossover coverage of exact d 3556/3600 = 98.8% (CP 98.4-99.1) -> PASS  per cell: 18:199/200 19:200/200 20:197/200 22:200/200 23:200/200 24:199/200 25:198/200 26:197/200 400:187/200 401:198/200 402:190/200 700:200/200 701:200/200 702:200/200 703:194/200 704:200/200 705:200/200 706:197/200
+(M) aniso3_w8: min L (power>=0.8 here and above) = 256; strict(CP-lower>=0.8) = 256; bar <= 160 -> FAIL; power 32:0.00 48:0.00 64:0.00 80:0.00 96:0.01 112:0.04 128:0.06 160:0.28 192:0.40 256:0.86
+(M) aniso2_w16: min L (power>=0.8 here and above) = None; strict(CP-lower>=0.8) = None; bar <= 512 -> FAIL; power 32:0.00 48:0.00 64:0.00 96:0.00 128:0.00 160:0.00 192:0.00 224:0.00 256:0.00 320:0.00 384:0.00 512:0.00 768:0.00
+infeasible (E7: no measure inside box / E8 n/a) datasets: 66/9400
+VERDICT E7: passes (C,F,X) but not M
+=== E8 (wpn 32)
+(C) control simultaneous coverage 2791/2800 = 99.7% (CP 99.4-99.9); control cells with CP-upper<93%: [] -> PASS
+(F) FPR margin 0.25 any-sign 0/2800 = 0.0% (CP 0.0-0.1); cells with CP-lower>5%: [] -> PASS
+(X) realised-crossover coverage of exact d 3591/3600 = 99.8% (CP 99.5-99.9) -> PASS  per cell: 18:200/200 19:200/200 20:200/200 22:200/200 23:199/200 24:200/200 25:199/200 26:199/200 400:200/200 401:200/200 402:198/200 700:200/200 701:199/200 702:199/200 703:199/200 704:199/200 705:200/200 706:200/200
+(M) aniso3_w8: min L (power>=0.8 here and above) = None; strict(CP-lower>=0.8) = None; bar <= 160 -> FAIL; power 32:0.00 48:0.00 64:0.00 80:0.03 96:0.06 112:0.14 128:0.18 160:0.26 192:0.42 256:0.61
+(M) aniso2_w16: min L (power>=0.8 here and above) = None; strict(CP-lower>=0.8) = None; bar <= 512 -> FAIL; power 32:0.00 48:0.00 64:0.00 96:0.00 128:0.00 160:0.01 192:0.01 224:0.01 256:0.01 320:0.01 384:0.01 512:0.01 768:0.01
+infeasible (E7: no measure inside box / E8 n/a) datasets: 0/9400
+VERDICT E8: passes (C,F,X) but not M
+=== A1' alarm (E6 band vs E7 band disjoint at any window time)
+alarm rate on controls: 0/1930 = 0.0% (CP 0.0-0.2) -> PASS (bar <= 5%)
+  per control cell: 0:0/127 1:0/200 2:0/200 3:0/200 5:0/3 6:0/200 7:0/200 8:0/200 11:0/200 12:0/200 13:0/200
+P(alarm | E6 misses) on misspecified (twostep, brush, gasket): 0/441 = 0.0% (CP 0.0-0.8) -> FAIL (bar >= 50%)
+  twostep: E6 misses 366/800; alarm among misses 0/366; alarm overall 0/800
+  brush: E6 misses 40/600; alarm among misses 0/40; alarm overall 0/600
+  gasket: E6 misses 35/558; alarm among misses 0/35; alarm overall 0/558
+E7-infeasible among alarm candidates: controls 4, misspec 18
+=== ungated
+atom gate: datasets using 400->799 only 9058, needing 1597 342, final gate failure (diff>0.005 at 799->1597) 170 of 9400; max gate1 diff (finite) 0.0027
+gate-failed datasets: 170/9400 (1.81%); their 799->1597 endpoint shift: median nan, max finite nan, infinite (feasibility changed) 170; by cell max share 0.105
+E7 coverage among FEASIBLE datasets only, controls: 2795/2796 = 100.0% (CP 99.8-100.0)
+E7 coverage among FEASIBLE datasets only, realised crossovers: 3556/3556 = 100.0% (CP 99.9-100.0)
+E7 coverage among gate-passing, feasible datasets only, controls: 2783/2784 = 100.0% (CP 99.8-100.0)
+E7 coverage among gate-passing, feasible datasets only, realised crossovers: 3471/3471 = 100.0% (CP 99.9-100.0)
+E7 infeasible by kind: {'control': 4, 'crossover': 44, 'twostep': 18}
+LP solve time per dataset (E7, all window times, 2-3 grids): mean 0.49s, median 0.31s, max 13.4s
+ cell          fam    L      kind  E7_cov  E7_hw  E7_decl_neg  E7_decl_any  E8_cov  E8_hw  E8_decl_neg  E8_decl_any  E6_cov  e4_hw  e4_cov
+    0         ring  128   control   1.000  0.839        0.000        0.000   0.980  0.986        0.000        0.000   0.992  2.443   0.992
+    1         ring  256   control   1.000  0.690        0.000        0.000   1.000  0.929        0.000        0.000   0.990  0.936   0.995
+    2         ring  512   control   1.000  0.599        0.000        0.000   0.990  0.865        0.000        0.000   0.995  0.530   0.990
+    3         ring 1024   control   1.000  0.532        0.000        0.000   0.995  0.808        0.000        0.000   0.995  0.358   0.980
+    4       torus2   24   control   1.000  1.383        0.000        0.000   1.000  1.317        0.000        0.000     NaN    NaN     NaN
+    5       torus2   32   control   1.000  1.112        0.000        0.000   0.995  1.242        0.000        0.000   1.000  2.818   1.000
+    6       torus2   48   control   1.000  0.893        0.000        0.000   1.000  1.144        0.000        0.000   0.995  1.326   1.000
+    7       torus2   64   control   0.990  0.791        0.000        0.000   0.995  1.092        0.000        0.000   1.000  0.822   0.995
+    8       torus2   96   control   0.990  0.676        0.000        0.000   1.000  1.009        0.000        0.000   1.000  0.492   0.995
+    9       torus3   16   control   1.000  1.409        0.000        0.000   1.000  1.525        0.000        0.000     NaN    NaN     NaN
+   10       torus3   20   control   1.000  1.156        0.000        0.000   1.000  1.400        0.000        0.000     NaN    NaN     NaN
+   11       torus3   24   control   1.000  1.015        0.000        0.000   1.000  1.338        0.000        0.000   0.995  1.533   1.000
+   12       torus3   28   control   1.000  0.923        0.000        0.000   1.000  1.291        0.000        0.000   0.995  1.099   0.990
+   13       torus3   32   control   0.995  0.868        0.000        0.000   1.000  1.266        0.000        0.000   1.000  0.848   0.995
+   14   aniso2_w16   32 crossover   1.000  1.476        0.000        0.000   1.000  1.367        0.000        0.000     NaN    NaN     NaN
+   15   aniso2_w16   48 crossover   1.000  1.255        0.000        0.000   1.000  1.295        0.000        0.000     NaN    NaN     NaN
+   16   aniso2_w16   64 crossover   1.000  1.138        0.000        0.000   1.000  1.275        0.000        0.000     NaN  2.920   1.000
+   17   aniso2_w16   96 crossover   1.000  1.006        0.000        0.000   1.000  1.236        0.000        0.000     NaN  1.808   1.000
+   18   aniso2_w16  128 crossover   0.995  0.923        0.000        0.000   1.000  1.218        0.000        0.000     NaN  1.262   0.985
+   19   aniso2_w16  192 crossover   1.000  0.814        0.000        0.000   1.000  1.138        0.005        0.005     NaN  0.792   0.985
+   20   aniso2_w16  256 crossover   0.985  0.749        0.000        0.000   1.000  1.073        0.005        0.005     NaN  0.648   0.935
+   21    aniso3_w8   32 crossover   1.000  1.903        0.000        0.000   1.000  1.726        0.000        0.000     NaN    NaN     NaN
+   22    aniso3_w8   48 crossover   1.000  1.557        0.000        0.000   1.000  1.663        0.000        0.000     NaN    NaN     NaN
+   23    aniso3_w8   64 crossover   1.000  1.342        0.000        0.000   0.995  1.576        0.000        0.000     NaN  2.466   1.000
+   24    aniso3_w8   96 crossover   0.995  1.102        0.005        0.005   1.000  1.387        0.055        0.055     NaN  1.530   1.000
+   25    aniso3_w8  128 crossover   0.990  0.966        0.060        0.060   0.995  1.266        0.185        0.185     NaN  1.097   0.955
+   26    aniso3_w8  192 crossover   0.985  0.824        0.395        0.395   0.995  1.138        0.420        0.420     NaN  0.804   0.975
+  100 twostep_8_32  128   twostep   0.985  0.807        0.000        0.000   1.000  1.168        0.005        0.005   0.995  0.658   0.970
+  101 twostep_8_32  192   twostep   0.985  0.746        0.010        0.010   1.000  1.135        0.005        0.005   0.830  0.537   0.955
+  102 twostep_8_32  256   twostep   0.960  0.709        0.095        0.095   1.000  1.112        0.035        0.035   0.310  0.518   0.935
+  103 twostep_8_32  320   twostep   0.980  0.677        0.585        0.585   1.000  1.083        0.160        0.160   0.035  0.495   0.950
+  104    brush_f24    8     brush   0.995  0.512        0.000        0.900   1.000  0.721        0.000        0.000   0.940  0.651   0.985
+  105    brush_f16   12     brush   1.000  0.529        0.000        1.000   0.990  0.758        0.000        0.000   0.965  0.720   0.980
+  106    brush_f16   16     brush   1.000  0.517        0.000        1.000   1.000  0.805        0.000        0.000   0.895  0.592   0.965
+  107       gasket    5    gasket   1.000  0.941        0.000        0.000   1.000  1.076        0.000        0.000   0.987  2.209   1.000
+  108       gasket    6    gasket   1.000  0.713        0.000        0.000   0.985  0.969        0.000        0.000   0.980  0.740   0.990
+  109       gasket    7    gasket   1.000  0.627        0.000        0.000   1.000  0.881        0.000        0.000   0.855  0.358   0.975
+  400   aniso2_w16  384 crossover   0.935  0.662        0.000        0.000   1.000  1.003        0.005        0.005     NaN  0.560   0.950
+  401   aniso2_w16  512 crossover   0.990  0.633        0.000        0.000   1.000  0.964        0.005        0.005     NaN  0.509   0.980
+  402   aniso2_w16  768 crossover   0.950  0.581        0.000        0.000   0.990  0.903        0.015        0.015     NaN  0.429   0.954
+  700    aniso3_w8   80 crossover   1.000  1.184        0.000        0.000   1.000  1.472        0.030        0.030     NaN  2.043   0.994
+  701    aniso3_w8  112 crossover   1.000  1.005        0.045        0.045   0.995  1.316        0.140        0.140     NaN  1.297   0.990
+  702    aniso3_w8  160 crossover   1.000  0.873        0.275        0.275   0.995  1.192        0.255        0.255     NaN  0.900   0.975
+  703    aniso3_w8  256 crossover   0.970  0.746        0.860        0.860   0.995  1.076        0.615        0.615     NaN  0.661   0.910
+  704   aniso2_w16  160 crossover   1.000  0.853        0.000        0.000   0.995  1.177        0.005        0.005     NaN  0.996   0.990
+  705   aniso2_w16  224 crossover   1.000  0.770        0.000        0.000   1.000  1.108        0.005        0.005     NaN  0.740   0.970
+  706   aniso2_w16  320 crossover   0.985  0.693        0.000        0.000   1.000  1.032        0.005        0.005     NaN  0.603   0.975
+=== ungated wpn=8
+E7: C 1597/1600 = 99.8% (CP 99.5-100.0) PASS; F 0/1600 = 0.0% (CP 0.0-0.2) PASS; X 3583/3600 = 99.5% (CP 99.2-99.7) PASS; M aniso3_w8: None (strict None) power 32:0.00 48:0.00 64:0.00 80:0.00 96:0.00 112:0.00 128:0.00 160:0.00 192:0.00 256:0.00; M aniso2_w16: None (strict None) power 128:0.00 160:0.00 192:0.00 224:0.00 256:0.00 320:0.00 384:0.00 512:0.00 768:0.00
+E8: C 1591/1600 = 99.4% (CP 98.9-99.7) PASS; F 0/1600 = 0.0% (CP 0.0-0.2) PASS; X 3583/3600 = 99.5% (CP 99.2-99.7) PASS; M aniso3_w8: None (strict None) power 32:0.00 48:0.01 64:0.00 80:0.01 96:0.00 112:0.01 128:0.01 160:0.03 192:0.03 256:0.04; M aniso2_w16: None (strict None) power 128:0.00 160:0.01 192:0.00 224:0.00 256:0.01 320:0.00 384:0.01 512:0.00 768:0.02
+=== ungated wpn=128
+E7: C 1590/1600 = 99.4% (CP 98.9-99.7) PASS; F 0/1600 = 0.0% (CP 0.0-0.2) PASS; X 3567/3600 = 99.1% (CP 98.7-99.4) PASS; M aniso3_w8: 80 (strict 96) power 32:0.00 48:0.00 64:0.06 80:0.82 96:1.00 112:1.00 128:1.00 160:1.00 192:1.00 256:0.99; M aniso2_w16: None (strict None) power 128:0.00 160:0.00 192:0.00 224:0.00 256:0.01 320:0.04 384:0.07 512:0.30 768:0.72
+E8: C 1600/1600 = 100.0% (CP 99.8-100.0) PASS; F 0/1600 = 0.0% (CP 0.0-0.2) PASS; X 3597/3600 = 99.9% (CP 99.8-100.0) PASS; M aniso3_w8: 112 (strict 112) power 32:0.00 48:0.00 64:0.00 80:0.24 96:0.65 112:0.86 128:0.95 160:0.99 192:1.00 256:1.00; M aniso2_w16: None (strict None) power 128:0.00 160:0.01 192:0.01 224:0.02 256:0.01 320:0.01 384:0.03 512:0.04 768:0.09

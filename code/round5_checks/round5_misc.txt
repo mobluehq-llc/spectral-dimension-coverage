@@ -1,0 +1,5 @@
+E0 controls: 14 cells, n=2800, answered=1939, covered=1827, abstained=861 = 30.8%  (covered/answered 1827/1939; the 1108 of the referee's reading is the COVERED count, not the answered count)
+E2 controls: 14 cells, n=2800, answered=1208, covered=1108, abstained=1592 = 56.9%  (covered/answered 1108/1208; the 1108 of the referee's reading is the COVERED count, not the answered count)
+3D L=160 n=200: endpoint test relaxation A 0/200, relaxation B 35/200; joint test E7j (B only) 170/200; no band A 0, B 0
+3D L=192 n=200: endpoint test relaxation A 0/200, relaxation B 46/200; joint test E7j (B only) 186/200; no band A 1, B 1
+3D L=256 n=200: endpoint test relaxation A 0/200, relaxation B 147/200; joint test E7j (B only) 198/200; no band A 0, B 0

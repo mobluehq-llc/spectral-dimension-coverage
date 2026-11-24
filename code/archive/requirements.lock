@@ -1,0 +1,20 @@
+# Pinned environment for regenerate_all.py (Python 3.12). Exact versions; install with setup_env.sh.
+# NumPy note: the stored Amendment 3-9 per-dataset results were simulated under NumPy 2.4.6 (SciPy 1.17.1); the stored
+# Amendment 10b/10c/11/12 results under NumPy 2.5.5 (SciPy 1.18.1). The same seed draws different walks under the two
+# versions, so RE-SIMULATING is not bit-reproducible across them. The stored per-dataset files are the record, and the
+# analysis in regenerate_all.py (stored rows to tables and verdicts) is run with the 2.5.5 set below.
+contourpy==1.4.0
+cycler==0.12.1
+fonttools==4.68.0
+highspy==1.16.0
+kiwisolver==1.5.1
+matplotlib==3.11.2
+numpy==2.5.5
+packaging==26.4
+pandas==3.1.1
+pillow==13.0.0
+pyparsing==3.3.3
+python-dateutil==4.0.0
+python-flint==0.9.0
+scipy==1.18.1
+tzdata==2026.6

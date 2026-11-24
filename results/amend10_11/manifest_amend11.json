@@ -1,0 +1,23 @@
+{
+ "cells_exact_sha256": "de21f1a0c011934bdc262d6476ba385da560d799a220e35a0a97e0f1059a21ec",
+ "complete": true,
+ "csv": "raw_amend11.csv",
+ "csv_sha256": "533ef4ce8ac57bcb8be02ca529266125457f0b359e1e6da932b06489699747f9",
+ "errors": [],
+ "finished": "2026-11-22 12:04:11",
+ "frozen_files": {
+  "p22amend.py": "f496087a9dad23ee92ca76f28724cc829f50b50c2011c36db86ac94d9b6806d8",
+  "p22amend6.py": "1d56c21774ff4402078942ccc88234bb4e9ed0d5a363ac14b0778b48b00bad18",
+  "p22amend8.py": "6b0964bffc9e69c8ec73d1573e2798378486f3ca638d8e5ad5ceec4f0dc8ebf3",
+  "p22honest.py": "871ed8b3e2a5049f23fa8c84c1a8f50e8a5556363f1c3e3f35096925ff192216",
+  "p22lib.py": "a4517f3e056246266a6eaae2db0063b0d5fb1e2fb903946b40eb4248b3d43b91",
+  "run_p22.py": "4a1937dff73cc1cb6f52bb67d5f5e7ec8f0b0bcd9087053f05feba375bc9848d"
+ },
+ "items_present": 1920,
+ "items_sha256_of_sha256s": "5bd61b942985233c43affe2acf8837919b588eb1fdcba774c8342993f35081f2",
+ "n_rows": 57600,
+ "name": "amend11",
+ "smoke": false,
+ "tasks_expected": 1920,
+ "tasks_resumed_from_disk": 0
+}

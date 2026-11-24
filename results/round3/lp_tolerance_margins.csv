@@ -1,0 +1,13 @@
+decision,tol,datasets_with_finite_U,within_tol_of_threshold,of_which_declared
+drop,1e-09,610,0,0
+drop,1e-07,610,0,0
+drop,1e-06,610,0,0
+drop,1e-05,610,0,0
+drop,0.0001,610,2,2
+drop,0.001,610,8,8
+rise,1e-09,16,0,0
+rise,1e-07,16,0,0
+rise,1e-06,16,0,0
+rise,1e-05,16,0,0
+rise,0.0001,16,0,0
+rise,0.001,16,0,0

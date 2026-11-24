@@ -1,0 +1,9 @@
+marginals: q(24) exact 0.114567 empirical 0.114584 (se 0.000039); q(34) exact 0.096403 empirical 0.096346 (se 0.000027)
+q(10,24,34) = [0.17619705 0.1145665  0.09640265]
+exact per-walker cov = 0.009142
+empirical (40 x 2000000 walkers) = 0.009132  se 0.000013  (z = -0.78); independent draws would give 0
+blocks: m=20 walkers per block, 800000 blocks; empirical cov 0.1843 (se about 0.0021); exact m*cov = 0.1828; independent would be 0
+
+real	0m28.891s
+user	0m26.497s
+sys	0m2.392s

@@ -1,0 +1,310 @@
+[
+ {
+  "cell": 6,
+  "ds": 126,
+  "why": [
+   "stable sample"
+  ]
+ },
+ {
+  "cell": 8,
+  "ds": 96,
+  "why": [
+   "problem(B/A/orig status != 0)"
+  ]
+ },
+ {
+  "cell": 18,
+  "ds": 78,
+  "why": [
+   "stable sample"
+  ]
+ },
+ {
+  "cell": 19,
+  "ds": 87,
+  "why": [
+   "sens sample"
+  ]
+ },
+ {
+  "cell": 19,
+  "ds": 162,
+  "why": [
+   "sens sample"
+  ]
+ },
+ {
+  "cell": 20,
+  "ds": 182,
+  "why": [
+   "sens sample"
+  ]
+ },
+ {
+  "cell": 26,
+  "ds": 55,
+  "why": [
+   "minL3d cell 26"
+  ]
+ },
+ {
+  "cell": 26,
+  "ds": 60,
+  "why": [
+   "problem(B/A/orig status != 0)"
+  ]
+ },
+ {
+  "cell": 26,
+  "ds": 63,
+  "why": [
+   "minL3d cell 26"
+  ]
+ },
+ {
+  "cell": 26,
+  "ds": 66,
+  "why": [
+   "minL3d cell 26"
+  ]
+ },
+ {
+  "cell": 26,
+  "ds": 75,
+  "why": [
+   "minL3d cell 26"
+  ]
+ },
+ {
+  "cell": 26,
+  "ds": 94,
+  "why": [
+   "minL3d cell 26"
+  ]
+ },
+ {
+  "cell": 26,
+  "ds": 123,
+  "why": [
+   "problem(B/A/orig status != 0)"
+  ]
+ },
+ {
+  "cell": 26,
+  "ds": 132,
+  "why": [
+   "problem(B/A/orig status != 0)"
+  ]
+ },
+ {
+  "cell": 26,
+  "ds": 156,
+  "why": [
+   "minL3d cell 26"
+  ]
+ },
+ {
+  "cell": 26,
+  "ds": 158,
+  "why": [
+   "problem(B/A/orig status != 0)"
+  ]
+ },
+ {
+  "cell": 26,
+  "ds": 177,
+  "why": [
+   "minL3d cell 26"
+  ]
+ },
+ {
+  "cell": 26,
+  "ds": 182,
+  "why": [
+   "minL3d cell 26"
+  ]
+ },
+ {
+  "cell": 26,
+  "ds": 192,
+  "why": [
+   "withheld E7j dataset"
+  ]
+ },
+ {
+  "cell": 101,
+  "ds": 197,
+  "why": [
+   "sens sample"
+  ]
+ },
+ {
+  "cell": 102,
+  "ds": 84,
+  "why": [
+   "sens sample"
+  ]
+ },
+ {
+  "cell": 103,
+  "ds": 79,
+  "why": [
+   "sens sample"
+  ]
+ },
+ {
+  "cell": 400,
+  "ds": 119,
+  "why": [
+   "problem(B/A/orig status != 0)"
+  ]
+ },
+ {
+  "cell": 402,
+  "ds": 85,
+  "why": [
+   "problem(B/A/orig status != 0)"
+  ]
+ },
+ {
+  "cell": 402,
+  "ds": 145,
+  "why": [
+   "sens sample"
+  ]
+ },
+ {
+  "cell": 702,
+  "ds": 2,
+  "why": [
+   "minL3d cell 702"
+  ]
+ },
+ {
+  "cell": 702,
+  "ds": 41,
+  "why": [
+   "minL3d cell 702"
+  ]
+ },
+ {
+  "cell": 702,
+  "ds": 52,
+  "why": [
+   "minL3d cell 702"
+  ]
+ },
+ {
+  "cell": 702,
+  "ds": 58,
+  "why": [
+   "minL3d cell 702"
+  ]
+ },
+ {
+  "cell": 702,
+  "ds": 64,
+  "why": [
+   "minL3d cell 702"
+  ]
+ },
+ {
+  "cell": 702,
+  "ds": 124,
+  "why": [
+   "minL3d cell 702"
+  ]
+ },
+ {
+  "cell": 702,
+  "ds": 142,
+  "why": [
+   "minL3d cell 702"
+  ]
+ },
+ {
+  "cell": 702,
+  "ds": 192,
+  "why": [
+   "minL3d cell 702"
+  ]
+ },
+ {
+  "cell": 703,
+  "ds": 58,
+  "why": [
+   "minL3d cell 703"
+  ]
+ },
+ {
+  "cell": 703,
+  "ds": 80,
+  "why": [
+   "minL3d cell 703"
+  ]
+ },
+ {
+  "cell": 703,
+  "ds": 104,
+  "why": [
+   "minL3d cell 703"
+  ]
+ },
+ {
+  "cell": 703,
+  "ds": 111,
+  "why": [
+   "minL3d cell 703"
+  ]
+ },
+ {
+  "cell": 703,
+  "ds": 124,
+  "why": [
+   "minL3d cell 703"
+  ]
+ },
+ {
+  "cell": 703,
+  "ds": 149,
+  "why": [
+   "minL3d cell 703"
+  ]
+ },
+ {
+  "cell": 703,
+  "ds": 182,
+  "why": [
+   "minL3d cell 703"
+  ]
+ },
+ {
+  "cell": 703,
+  "ds": 187,
+  "why": [
+   "minL3d cell 703"
+  ]
+ },
+ {
+  "cell": 705,
+  "ds": 177,
+  "why": [
+   "stable sample"
+  ]
+ },
+ {
+  "cell": 706,
+  "ds": 129,
+  "why": [
+   "stable sample"
+  ]
+ },
+ {
+  "cell": 706,
+  "ds": 158,
+  "why": [
+   "sens sample"
+  ]
+ }
+]

@@ -1,0 +1,3 @@
+E7 holdout controls wpn=8: n=1200 no_band=1
+E7 holdout controls wpn=32: n=1200 no_band=4
+E7 holdout controls wpn=128: n=1200 no_band=13

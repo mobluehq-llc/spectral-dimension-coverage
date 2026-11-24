@@ -1,0 +1,5 @@
+EXPLORATORY E4o Markowitz check, ring L=512 (cell 2), arm=replay, n=200, numpy 2.5.5, 21s
+V0_baseline: coverage 177/200 = 88.5% (CP 83.2-92.6); abstained 0; sd ratio (median over J-strata>=30, j; strata used 27) 0.868; pooled 1/std(n/sd) 0.852; stochastic-part coverage 83.5%; mean crit 2.492; mean hw 0.1466; datasets with |b|>B: 0
+V1_B1000: coverage 181/200 = 90.5% (CP 85.6-94.2); abstained 0; sd ratio (median over J-strata>=30, j; strata used 27) 0.900; pooled 1/std(n/sd) 0.889; stochastic-part coverage 86.5%; mean crit 2.507; mean hw 0.1506; datasets with |b|>B: 0
+V2_split_A: coverage 191/200 = 95.5% (CP 91.6-97.9); abstained 0; sd ratio (median over J-strata>=30, j; strata used 27) 0.833; pooled 1/std(n/sd) 0.836; stochastic-part coverage 95.0%; mean crit 2.977; mean hw 0.1714; datasets with |b|>B: 0
+replay check vs stored raw_amend3 E4o cell 2: rows 200; abstain equal 200; answered 200; J equal 200; cov equal 200; hw within 1e-6 200; stored coverage 177/200

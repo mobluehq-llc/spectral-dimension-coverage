@@ -1,0 +1,17 @@
+READING LOG (every place a bar needed a reading; the conservative reading is binding, the other is shown):
+ R1 Denominators. "Coverage" and "FPR" in every earlier amendment (analyze_amend9.calib) are computed over datasets where the estimator answered
+    (abstain==0 and nowin==0). That is the PRIMARY (binding) reading for 10c and 11 and is kept; the strict reading (abstention counts as a miss) is computed
+    and printed beside it (sensitivity columns 'strict'). 10b uses FIXED denominators (all datasets in the group; no band or infeasible = not covered /
+    not detected) as the referee asked, binding.
+ R2 Intervals. Plain numeric bars (G1, G3, G4 pooled, G5, 10b C/X/F/M, 10c E4c >= 93%) are tested on the POINT estimate, as in every earlier amendment (power
+    and coverage bars in analyze_amend9); the plan's own CP rules (G2, per-cell C/F rules, 10c CP-upper(128) < CP-lower(8)) are used as written. CP
+    intervals are reported for everything, and the stricter reading "the CP bound must also meet the plain bar" is computed and flagged when it would
+    change a verdict (column ci_strict).
+ R3 Cells with zero answered datasets (E1q/E4 abstain by the frozen J<6 rule) are skipped in per-cell tests (no data, CP undefined) and listed.
+ R4 G5 and 10b-F: FPR is any-sign declaration (decl_neg or decl_pos) at margin 0.25. Conservative extra reading (as the earlier F gate): no cell with
+    CP-lower > 5%.
+ R5 10b: both outer relaxations (A literal, B tight) must meet the bar for E7; E7j exists only for B (certified LP). 3D min L: E7j power >= 0.8 at
+    L = 160, 192 and 256 (power >= 0.8 'here and above'), fixed denominator 200.
+ R6 10c: the central-result bar must hold pooled over both families AND within each family; E4c >= 93% must hold at each wpn (pooled and per family).
+    'monotone' = strictly decreasing 8 > 32 > 128.
+ R7 G2: strict decrease in the answered-dataset point estimates; CP-upper(128) < CP-lower(8).

@@ -1,0 +1,23 @@
+est,check,original,replicate,inside
+E6,"coverage, realised crossover pooled",99.2 (98.5-99.6),99.0 (98.3-99.5),True
+E6,"coverage, twostep_8_32 L=128",99.5 (97.2-100.0),99.0 (96.4-99.9),True
+E6,"coverage, twostep_8_32 L=192",83.0 (77.1-87.9),85.0 (79.3-89.6),True
+E6,"coverage, twostep_8_32 L=256",31.0 (24.7-37.9),26.0 (20.1-32.7),True
+E6,"coverage, twostep_8_32 L=320",3.5 (1.4-7.1),1.5 (0.3-4.3),True
+E6,"coverage, twostep pooled",54.2 (50.7-57.7),52.9 (49.3-56.4),True
+E6,"coverage, brush_f24 Lb=8",94.0 (89.8-96.9),95.0 (91.0-97.6),True
+E6,"coverage, brush_f16 Lb=12",96.5 (92.9-98.6),95.5 (91.6-97.9),True
+E6,"coverage, brush_f16 Lb=16",89.5 (84.4-93.4),92.5 (87.9-95.7),True
+E6,"coverage, brush pooled",93.3 (91.0-95.2),94.3 (92.2-96.0),True
+E6,"correct-sign power, realised crossover (abstain=miss)",56.9 (54.4-59.3),55.6 (53.1-58.0),True
+E4c,"coverage, realised crossover pooled",96.4 (95.2-97.4),96.9 (95.8-97.8),True
+E4c,"coverage, twostep_8_32 L=128",97.0 (93.6-98.9),96.0 (92.3-98.3),True
+E4c,"coverage, twostep_8_32 L=192",95.5 (91.6-97.9),93.0 (88.5-96.1),True
+E4c,"coverage, twostep_8_32 L=256",93.5 (89.1-96.5),94.5 (90.3-97.2),True
+E4c,"coverage, twostep_8_32 L=320",95.0 (91.0-97.6),96.0 (92.3-98.3),True
+E4c,"coverage, twostep pooled",95.2 (93.5-96.6),94.9 (93.1-96.3),True
+E4c,"coverage, brush_f24 Lb=8",98.5 (95.7-99.7),96.5 (92.9-98.6),True
+E4c,"coverage, brush_f16 Lb=12",98.0 (95.0-99.5),99.0 (96.4-99.9),True
+E4c,"coverage, brush_f16 Lb=16",96.5 (92.9-98.6),97.5 (94.3-99.2),True
+E4c,"coverage, brush pooled",97.7 (96.1-98.7),97.7 (96.1-98.7),True
+E4c,"correct-sign power, realised crossover (abstain=miss)",25.0 (22.9-27.2),23.8 (21.7-25.9),True

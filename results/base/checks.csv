@@ -1,0 +1,19 @@
+check,ok,detail
+(a) sampler direct torus 24x24,True,"max|z|=1.63 over 7 times, W=400000"
+(a) sampler direct ring 64,True,"max|z|=1.88 over 7 times, W=400000"
+(a) sampler direct 3D torus 8^3,True,"max|z|=2.10 over 7 times, W=400000"
+(a) sampler step ring 64,True,"max|z|=1.32 over 7 times, W=400000"
+(a) sampler step gasket n=4,True,max|z|=2.15
+(b) Hutchinson probes unbiased torus 16x16,True,max|z|=1.41
+(b) Hutchinson probes unbiased gasket n=5,True,max|z|=0.27
+(e) spectral q vs matrix power ring 40,True,max err 9.02e-17
+(e) d(t) vs finite difference ring 40,True,|diff|=3.59e-10
+(e) spectral q vs matrix power torus 12x10,True,max err 3.47e-18
+(e) d(t) vs finite difference torus 12x10,True,|diff|=6.68e-10
+(e) spectral q vs matrix power gasket n=5,True,max err 2.43e-16
+(e) d(t) vs finite difference gasket n=5,True,|diff|=6.14e-10
+(c) bootstrap sd B=200 vs B=1000,True,"ratio range [0.941,1.066] over 20 datasets"
+(f) gasket n=4 exact window d,True,N=123 window too short (<3 grid points)
+(f) gasket n=5 exact window d,True,"N=366 window t=24..136 mean d=1.303 (asymptotic 1.365), min 1.269 max 1.342"
+(f) gasket n=6 exact window d,True,"N=1095 window t=24..768 mean d=1.319 (asymptotic 1.365), min 1.244 max 1.373"
+(f) gasket n=7 exact window d,True,"N=3282 window t=24..3072 mean d=1.335 (asymptotic 1.365), min 1.281 max 1.390"

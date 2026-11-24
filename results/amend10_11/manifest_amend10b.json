@@ -1,0 +1,23 @@
+{
+ "complete": true,
+ "csv": "raw_amend10b.csv",
+ "csv_sha256": "2adfb2c6abe78a0a6e8b5779f0980a820d31b8fd1f260e8cd96acab3ecf9a409",
+ "errors": [],
+ "finished": "2026-11-22 10:54:55",
+ "frozen_files": {
+  "p22amend.py": "f496087a9dad23ee92ca76f28724cc829f50b50c2011c36db86ac94d9b6806d8",
+  "p22amend6.py": "1d56c21774ff4402078942ccc88234bb4e9ed0d5a363ac14b0778b48b00bad18",
+  "p22amend8.py": "6b0964bffc9e69c8ec73d1573e2798378486f3ca638d8e5ad5ceec4f0dc8ebf3",
+  "p22honest.py": "871ed8b3e2a5049f23fa8c84c1a8f50e8a5556363f1c3e3f35096925ff192216",
+  "p22lib.py": "a4517f3e056246266a6eaae2db0063b0d5fb1e2fb903946b40eb4248b3d43b91",
+  "run_p22.py": "4a1937dff73cc1cb6f52bb67d5f5e7ec8f0b0bcd9087053f05feba375bc9848d"
+ },
+ "items_present": 1030,
+ "items_sha256_of_sha256s": "e278933b3cf4c27244c7cba718471f5934c46e9e04958faa24648c30b4d68de9",
+ "n_rows": 1030,
+ "name": "amend10b",
+ "selection_sha256": "a1d3f5f414ef06efc27cc6d6def6cbc1aaf22cb60297f11072c0b64d80bdf98e",
+ "smoke": false,
+ "tasks_expected": 1030,
+ "tasks_resumed_from_disk": 0
+}

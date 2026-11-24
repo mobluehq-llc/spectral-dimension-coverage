@@ -1,0 +1,10 @@
+prep 0s, 4 cells, group sep, ncpu 16
+1/160 tasks elapsed 45s
+21/160 tasks elapsed 91s
+41/160 tasks elapsed 135s
+61/160 tasks elapsed 175s
+81/160 tasks elapsed 234s
+101/160 tasks elapsed 266s
+121/160 tasks elapsed 295s
+141/160 tasks elapsed 319s
+done 1600 rows in 343s

@@ -1,0 +1,7 @@
+Checks run on host-D (WSL, <local path omitted>) on 2026-11-22 before copying; outputs as observed.
+manifest: complete=True, errors=[], items_present == tasks_expected for all four runs:
+  amend10b 1030/1030, amend10b_exactq 7/7, amend10c 2240/2240, amend11 1920/1920
+raw csv sha256 equals manifest csv_sha256 (host-D, and again on the local copies): 4/4
+items_<name>.sha256 re-checked against every per-dataset pickle: listed 1030/7/2240/1920, missing 0, bad 0
+manifest items_sha256_of_sha256s recomputed as sha256("".join(f"{f} {sha}\n" for f in sorted(items))) as in run_amend1011.py:finish -> 4/4 match
+pre-registration files: amend10b_selection.json a1d3f5f4...98e, amend10c_windows.json 347a9333...63ad, amend11_cells_exact.json de21f1a0...21ec all equal the manifest values

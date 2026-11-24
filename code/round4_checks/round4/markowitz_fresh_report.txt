@@ -1,0 +1,4 @@
+EXPLORATORY E4o Markowitz check, ring L=512 (cell 2), arm=fresh, n=1000, numpy 2.5.5, 96s
+V0_baseline: coverage 911/1000 = 91.1% (CP 89.2-92.8); abstained 0; sd ratio (median over J-strata>=100, j; strata used 27) 0.867; pooled 1/std(n/sd) 0.857; stochastic-part coverage 87.0%; mean crit 2.492; mean hw 0.1475; datasets with |b|>B: 0
+V1_B1000: coverage 932/1000 = 93.2% (CP 91.5-94.7); abstained 0; sd ratio (median over J-strata>=100, j; strata used 27) 0.902; pooled 1/std(n/sd) 0.894; stochastic-part coverage 89.6%; mean crit 2.507; mean hw 0.1506; datasets with |b|>B: 0
+V2_split_A: coverage 960/1000 = 96.0% (CP 94.6-97.1); abstained 0; sd ratio (median over J-strata>=100, j; strata used 27) 0.864; pooled 1/std(n/sd) 0.849; stochastic-part coverage 94.0%; mean crit 2.971; mean hw 0.1708; datasets with |b|>B: 0

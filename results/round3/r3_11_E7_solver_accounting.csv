@@ -1,0 +1,7 @@
+kind,wpn,n,no_band,lp_status_ne0,gate_fail
+control,8,1200,1,1,7
+control,32,1200,4,4,15
+control,128,1200,13,13,10
+crossover,8,2000,5,5,9
+crossover,32,2000,3,3,12
+crossover,128,2000,4,4,14

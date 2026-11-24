@@ -1,0 +1,8 @@
+est,abstain_ctrl,cov_ctrl,cov_bad_cells,C,fpr,fpr_bad_cells,F,cov_xover_real,premature_any,power_at_Lmax_aniso2_w16,minL_aniso2_w16,power_at_Lmax_aniso3_w8,minL_aniso3_w8,cov_ctrl_vs_plateau,PASS_CF
+E0,0.308,94.3 (93.2-95.3),none,True,0.3 (0.1-0.6),none,True,80.1 (77.8-82.3),5.5 (2.8-9.6),1.0,192,1.0,96,,True
+E1q,0.311,94.4 (93.2-95.3),none,True,0.6 (0.3-1.0),none,True,27.2 (24.7-29.8),2.5 (0.8-5.7),0.94,192,1.0,96,,True
+E4c,0.311,99.6 (99.2-99.8),none,True,0.0 (0.0-0.2),none,True,96.4 (95.2-97.4),0.0 (0.0-1.8),0.23,not reached (>256),0.88,192,,True
+E6,0.311,99.6 (99.2-99.8),none,True,0.0 (0.0-0.2),none,True,99.2 (98.5-99.6),0.5 (0.0-2.7),0.98,256,1.0,96,,True
+M,0.568,86.0 (83.9-87.9),ring256;ring512;ring1024;torus296,False,0.2 (0.1-0.7),none,True,87.4 (85.2-89.4),n/a,0.97,192,0.98,128,84.6 (82.5-86.6),False
+Mb,0.568,97.9 (97.0-98.7),none,True,0.1 (0.0-0.5),none,True,98.9 (98.0-99.4),n/a,0.87,256,0.94,128,96.7 (95.5-97.6),True
+CL,0.107,95.9 (95.0-96.6),none,True,0.2 (0.1-0.5),none,True,32.2 (30.0-34.6),41.9 (38.8-45.0),0.93,128,1.0,64,96.0 (95.2-96.8),True

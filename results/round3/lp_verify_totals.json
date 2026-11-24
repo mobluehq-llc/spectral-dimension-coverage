@@ -1,0 +1,13 @@
+{
+ "datasets": 44,
+ "empty_set_datasets": 1,
+ "empty_certified": 1,
+ "lps": 2016,
+ "lps_exact": 2016,
+ "lps_not_exact": 0,
+ "lps_needing_exact_pivots": 370,
+ "max_solver_basis_dual_violation": 9.925029107755634e-08,
+ "max_abs_gap_ds_vs_ipm": 2.9232640752496764e-09,
+ "max_rel_gap_reported_vs_exact": 8.246400350788475e-08,
+ "datasets_with_any_unverified_lp": 0
+}

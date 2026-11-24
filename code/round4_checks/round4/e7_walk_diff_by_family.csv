@@ -1,0 +1,11 @@
+fam,cells,datasets,walks_differ,first_diff_inside_exact_window,group
+aniso2_w16,9,270,211,154,b8
+aniso3_w8,9,270,106,56,b8
+ring,4,120,104,48,b8
+torus2,5,150,90,18,b8
+torus3,5,150,56,0,b8
+aniso2_w16,9,270,228,175,b32
+aniso3_w8,9,270,119,60,b32
+ring,4,120,115,60,b32
+torus2,5,150,106,30,b32
+torus3,5,150,60,0,b32

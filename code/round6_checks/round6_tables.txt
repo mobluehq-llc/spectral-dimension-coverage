@@ -1,0 +1,1 @@
+L_min recomputed equals the reported value for all 40 arm-family-budget entries

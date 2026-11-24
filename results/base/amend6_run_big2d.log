@@ -1,0 +1,8 @@
+prep 0s, 3 cells, group big2d, ncpu 16
+1/120 tasks elapsed 9s
+21/120 tasks elapsed 18s
+41/120 tasks elapsed 26s
+61/120 tasks elapsed 32s
+81/120 tasks elapsed 38s
+101/120 tasks elapsed 43s
+done 1800 rows in 48s

@@ -1,0 +1,14 @@
+exact ring L=1024: eps [0.0001, 0.001, 0.01] | outcome WITNESS at all 3 eps | exact max drop 0.000 | joint drop 0 | endpoint drop 0 | gate disagreements 0
+exact torus2 L=96: eps [0.0001, 0.001, 0.01] | outcome WITNESS at all 3 eps | exact max drop 0.004 | joint drop 0 | endpoint drop 0 | gate disagreements 0
+exact torus3 L=24: eps [0.0001, 0.001, 0.01] | outcome WITNESS at all 3 eps | exact max drop 0.053 | joint drop 0 | endpoint drop 0 | gate disagreements 0
+exact aniso2_w16 L=768: eps [0.0001, 0.001, 0.01] | outcome DROP at all 3 eps | exact max drop 1.004 | joint drop 1 | endpoint drop 1 | gate disagreements 0
+exact aniso3_w8 L=160: eps [0.0001, 0.001, 0.01] | outcome DROP at all 3 eps | exact max drop 2.020 | joint drop 1 | endpoint drop 1 | gate disagreements 0
+data aniso2_w16 L=768 wpn32: n 100 | DROP 37 (CP 27.6-47.2) | WITNESS 58 | INCONCLUSIVE 5 | other 0 | joint drop 0 (CP 0.0-3.6) | joint infeasible 3 | endpoint drop 0 | joint drop and global not DROP 0 | both witnesses 58 | gate disagreements 0 | LPs mean 31 max 401 | seconds mean 6.7
+data aniso2_w16 L=768 wpn32: no-drop witnesses, smallest change min -0.250 median -0.250 max -0.198
+data aniso2_w16 L=768 wpn32: DROP if every INCONCLUSIVE were a drop 42 | DROP among joint no-drop 37 of 100
+data aniso3_w8 L=160 wpn32: n 100 | DROP 100 (CP 96.4-100.0) | WITNESS 0 | INCONCLUSIVE 0 | other 0 | joint drop 87 (CP 78.8-92.9) | joint infeasible 0 | endpoint drop 27 | joint drop and global not DROP 0 | both witnesses 0 | gate disagreements 0 | LPs mean 13 max 36 | seconds mean 1.6
+data aniso3_w8 L=160 wpn32: DROP if every INCONCLUSIVE were a drop 100 | DROP among joint no-drop 13 of 13
+control ring L=1024 wpn32: n 100 | DROP 0 | WITNESS 100 | joint drop 0
+control torus2 L=96 wpn32: n 100 | DROP 0 | WITNESS 100 | joint drop 0
+control torus3 L=24 wpn32: n 100 | DROP 0 | WITNESS 100 | joint drop 0
+controls pooled: DROP 0/300 | WITNESS 300/300 | joint drop 0/300 | CP 95% upper limit on the false-drop rate 1.2%

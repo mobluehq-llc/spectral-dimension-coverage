@@ -1,0 +1,87 @@
+==================== Amendment 13(b): random-graph arm (Watts-Strogatz, 2D site-percolation clusters)
+   id            name   fam       N_mean  N_min  N_max  exact_J  max_drop  max_rise  max_abs_delta   d_start     d_end  sd_d_between_graphs_mean_over_window  crossover_like  flat_like
+0   0  ws_N1000_p0.05    ws  1000.000000   1000   1000        7       0.0  1.159365       1.159365  1.451257  2.610622                              0.089714            True      False
+1   1  ws_N2000_p0.01    ws  2000.000000   2000   2000       13       0.0  0.933264       0.933264  1.090989  2.024254                              0.067230            True      False
+2   2  ws_N2000_p0.03    ws  2000.000000   2000   2000       10       0.0  1.544325       1.544325  1.274599  2.818924                              0.080463            True      False
+3   3  ws_N4000_p0.05    ws  4000.000000   4000   4000        9       0.0  2.277426       2.277426  1.458576  3.736002                              0.069450            True      False
+4   4  perc_L40_p0.65  perc   888.286667    366   1068       11       0.0  0.057724       0.057724  1.230226  1.280192                              0.064538           False       True
+5   5  perc_L64_p0.65  perc  2407.106667   1527   2622       15       0.0  0.131742       0.131742  1.250386  1.370870                              0.054415           False       True
+6   6  perc_L40_p0.75  perc  1183.816667   1088   1242       10       0.0  0.097622       0.097622  1.445865  1.527668                              0.052883           False       True
+7   7  perc_L64_p0.75  perc  3042.746667   2958   3124       12       0.0  0.182895       0.182895  1.485886  1.634985                              0.035410           False       True
+8   8  ws_N4000_p0.02    ws  4000.000000   4000   4000       12       0.0  1.731381       1.731381  1.184196  2.915577                              0.075776            True      False
+9   9  perc_L64_p0.70  perc  2781.823333   2347   2896       13       0.0  0.200703       0.200703  1.362750  1.555310                              0.048951           False       True
+--- target: single-realisation (column cov_simult)
+  E1q     wpn   8 crossover_like  1140/1494 = 76.3% (CP 74.1-78.4)
+  E1q     wpn   8 flat_like       1397/1497 = 93.3% (CP 91.9-94.5) cells with CP-upper<93: [7]
+  E1q     wpn  32 crossover_like  841/1500 = 56.1% (CP 53.5-58.6)
+  E1q     wpn  32 flat_like       1244/1500 = 82.9% (CP 80.9-84.8) cells with CP-upper<93: [4, 5, 7, 9]
+  E1q     wpn 128 crossover_like  570/1500 = 38.0% (CP 35.5-40.5)
+  E1q     wpn 128 flat_like       962/1500 = 64.1% (CP 61.6-66.6) cells with CP-upper<93: [4, 5, 6, 7, 9]
+  E4c     wpn   8 crossover_like  1478/1494 = 98.9% (CP 98.3-99.4)
+  E4c     wpn   8 flat_like       1487/1497 = 99.3% (CP 98.8-99.7) cells with CP-upper<93: []
+  E4c     wpn  32 crossover_like  1482/1500 = 98.8% (CP 98.1-99.3)
+  E4c     wpn  32 flat_like       1477/1500 = 98.5% (CP 97.7-99.0) cells with CP-upper<93: []
+  E4c     wpn 128 crossover_like  1475/1500 = 98.3% (CP 97.5-98.9)
+  E4c     wpn 128 flat_like       1479/1499 = 98.7% (CP 97.9-99.2) cells with CP-upper<93: []
+  E4c_V2  wpn   8 crossover_like  1485/1494 = 99.4% (CP 98.9-99.7)
+  E4c_V2  wpn   8 flat_like       1487/1497 = 99.3% (CP 98.8-99.7) cells with CP-upper<93: []
+  E4c_V2  wpn  32 crossover_like  1491/1500 = 99.4% (CP 98.9-99.7)
+  E4c_V2  wpn  32 flat_like       1487/1500 = 99.1% (CP 98.5-99.5) cells with CP-upper<93: []
+  E4c_V2  wpn 128 crossover_like  1489/1500 = 99.3% (CP 98.7-99.6)
+  E4c_V2  wpn 128 flat_like       1486/1499 = 99.1% (CP 98.5-99.5) cells with CP-upper<93: []
+  E7      wpn   8 crossover_like  1499/1500 = 99.9% (CP 99.6-100.0)
+  E7      wpn   8 flat_like       1500/1500 = 100.0% (CP 99.8-100.0) cells with CP-upper<93: []
+  E7      wpn  32 crossover_like  1500/1500 = 100.0% (CP 99.8-100.0)
+  E7      wpn  32 flat_like       1500/1500 = 100.0% (CP 99.8-100.0) cells with CP-upper<93: []
+  E7      wpn 128 crossover_like  1500/1500 = 100.0% (CP 99.8-100.0)
+  E7      wpn 128 flat_like       1499/1500 = 99.9% (CP 99.6-100.0) cells with CP-upper<93: []
+
+--- target: ensemble-mean (column cov_simult_E)
+  E1q     wpn   8 crossover_like  1021/1494 = 68.3% (CP 65.9-70.7)
+  E1q     wpn   8 flat_like       1311/1497 = 87.6% (CP 85.8-89.2) cells with CP-upper<93: [4, 5, 7, 9]
+  E1q     wpn  32 crossover_like  594/1500 = 39.6% (CP 37.1-42.1)
+  E1q     wpn  32 flat_like       978/1500 = 65.2% (CP 62.7-67.6) cells with CP-upper<93: [4, 5, 6, 7, 9]
+  E1q     wpn 128 crossover_like  333/1500 = 22.2% (CP 20.1-24.4)
+  E1q     wpn 128 flat_like       541/1500 = 36.1% (CP 33.6-38.6) cells with CP-upper<93: [4, 5, 6, 7, 9]
+  E4c     wpn   8 crossover_like  1465/1494 = 98.1% (CP 97.2-98.7)
+  E4c     wpn   8 flat_like       1477/1497 = 98.7% (CP 97.9-99.2) cells with CP-upper<93: []
+  E4c     wpn  32 crossover_like  1407/1500 = 93.8% (CP 92.5-95.0)
+  E4c     wpn  32 flat_like       1430/1500 = 95.3% (CP 94.1-96.3) cells with CP-upper<93: []
+  E4c     wpn 128 crossover_like  1206/1500 = 80.4% (CP 78.3-82.4)
+  E4c     wpn 128 flat_like       1277/1499 = 85.2% (CP 83.3-87.0) cells with CP-upper<93: [4, 5, 9]
+  E4c_V2  wpn   8 crossover_like  1478/1494 = 98.9% (CP 98.3-99.4)
+  E4c_V2  wpn   8 flat_like       1485/1497 = 99.2% (CP 98.6-99.6) cells with CP-upper<93: []
+  E4c_V2  wpn  32 crossover_like  1424/1500 = 94.9% (CP 93.7-96.0)
+  E4c_V2  wpn  32 flat_like       1462/1500 = 97.5% (CP 96.5-98.2) cells with CP-upper<93: []
+  E4c_V2  wpn 128 crossover_like  1240/1500 = 82.7% (CP 80.7-84.6)
+  E4c_V2  wpn 128 flat_like       1318/1499 = 87.9% (CP 86.2-89.5) cells with CP-upper<93: [4, 5, 9]
+  E7      wpn   8 crossover_like  1500/1500 = 100.0% (CP 99.8-100.0)
+  E7      wpn   8 flat_like       1500/1500 = 100.0% (CP 99.8-100.0) cells with CP-upper<93: []
+  E7      wpn  32 crossover_like  1500/1500 = 100.0% (CP 99.8-100.0)
+  E7      wpn  32 flat_like       1500/1500 = 100.0% (CP 99.8-100.0) cells with CP-upper<93: []
+  E7      wpn 128 crossover_like  1488/1500 = 99.2% (CP 98.6-99.6)
+  E7      wpn 128 flat_like       1498/1500 = 99.9% (CP 99.5-100.0) cells with CP-upper<93: []
+
+VERDICT B-X (single-realisation) E4c: crossover-like coverage >= 90% at wpn 8/32/128: [True, True, True] -> PASS; B-C flat-like >= 93% and no cell CP-upper<93: [True, True, True] -> PASS
+VERDICT B-X (single-realisation) E4c_V2: crossover-like coverage >= 90% at wpn 8/32/128: [True, True, True] -> PASS; B-C flat-like >= 93% and no cell CP-upper<93: [True, True, True] -> PASS
+VERDICT B-X (single-realisation) E7: crossover-like coverage >= 90% at wpn 8/32/128: [True, True, True] -> PASS; B-C flat-like >= 93% and no cell CP-upper<93: [True, True, True] -> PASS
+VERDICT B-X (ensemble-mean) E4c: crossover-like coverage >= 90% at wpn 8/32/128: [True, True, False] -> FAIL; B-C flat-like >= 93% and no cell CP-upper<93: [True, True, False] -> FAIL
+VERDICT B-X (ensemble-mean) E4c_V2: crossover-like coverage >= 90% at wpn 8/32/128: [True, True, False] -> FAIL; B-C flat-like >= 93% and no cell CP-upper<93: [True, True, False] -> FAIL
+VERDICT B-X (ensemble-mean) E7: crossover-like coverage >= 90% at wpn 8/32/128: [True, True, True] -> PASS; B-C flat-like >= 93% and no cell CP-upper<93: [True, True, True] -> PASS
+VERDICT B-G1 E1q crossover-like coverage at wpn 32 <= 40%: 0.561 -> FAIL; B-G2 strictly decreasing 8>32>128 with CP-upper(128) < CP-lower(8): 0.763, 0.561, 0.380 -> PASS
+VERDICT B-F E4c wpn 32: false-change rate on flat-like cells (realisation exact excursion <= 0.25) 0/1341 = 0.0% (CP 0.0-0.3); cells CP-lower > 5%: [] -> PASS
+VERDICT B-F E4c_V2 wpn 32: false-change rate on flat-like cells (realisation exact excursion <= 0.25) 0/1341 = 0.0% (CP 0.0-0.3); cells CP-lower > 5%: [] -> PASS
+per-cell mean |d_S - d_E| over the realisation window / exact excursion / N / eig seconds:
+                gap_SE_mean  exc_S_mean     N_r_mean      eig_s
+name                                                           
+perc_L40_p0.65     0.109333    0.112902   885.606667   0.030216
+perc_L40_p0.75     0.073130    0.118062  1184.733333   0.062450
+perc_L64_p0.65     0.104675    0.169460  2369.296667   0.926922
+perc_L64_p0.70     0.080700    0.221784  2782.786667   1.707972
+perc_L64_p0.75     0.057324    0.195972  3039.596667   2.797705
+ws_N1000_p0.05     0.129127    1.156186  1000.000000   0.040600
+ws_N2000_p0.01     0.141406    0.930063  2000.000000   0.396242
+ws_N2000_p0.03     0.142622    1.493795  2000.000000   0.403017
+ws_N4000_p0.02     0.145348    1.783334  4000.000000  26.556006
+ws_N4000_p0.05     0.130998    2.289429  4000.000000  29.502272
+E7 LP seconds: median 0.49, 95th pct 0.93

@@ -1,0 +1,43 @@
+== exact q (B1)
+       fam    L   eps  exact_drop     D_lo     D_hi          status  steps  n_incon   seconds
+aniso2_w16  768 0.001    1.004345 0.923906 0.928125              OK     10        1 66.223458
+aniso2_w16  768 0.010    1.004345 0.717920 0.722871              OK     10        1 71.889063
+ aniso3_w8  160 0.001    2.020286 1.900049 1.903242              OK     11        1 33.211464
+ aniso3_w8  160 0.010    2.020286 1.631875 1.635518              OK     11        2 52.805966
+      ring 1024 0.001    0.000000 0.000000 0.000000 NODROP0_WITNESS      1        0  1.461266
+      ring 1024 0.010    0.000000 0.000000 0.000000 NODROP0_WITNESS      1        0  1.132337
+    torus2   96 0.001    0.004371 0.000000 0.000000 NODROP0_WITNESS      1        0  0.893799
+    torus2   96 0.010    0.004371 0.000000 0.000000 NODROP0_WITNESS      1        0  0.418611
+    torus3   24 0.001    0.052943 0.000000 0.000000 NODROP0_WITNESS      1        0  0.468286
+    torus3   24 0.010    0.052943 0.000000 0.000000 NODROP0_WITNESS      1        0  0.206942
+
+== data aniso2_w16 768  n=100  status {'OK': 100}  seconds mean 110.6 max 222.6
+D_lo min/q1/med/q3/max/mean: [np.float64(0.0448), np.float64(0.1834), np.float64(0.2242), np.float64(0.2551), np.float64(0.4775), np.float64(0.2234)]
+  D_lo > 0.25: 33/100  CP95 (np.float64(0.239), np.float64(0.431))
+  D_lo > 0.5: 0/100  CP95 (0.0, np.float64(0.036))
+  D_lo > 1.0: 0/100  CP95 (0.0, np.float64(0.036))
+  D_lo >= 0.25 (bracket lower end): 33
+  stored global DROP: 37
+  B2: D_lo>=0.25 but stored non-DROP: 0;  D_hi<0.245 but stored DROP: 0;  straddling 0.25: 9
+  stored DROP with D_lo==0 (status): {}
+  datasets with an INCONCLUSIVE step: 100
+  B4: D_lo <= exact drop 1.0043: 100/100 CP95 (np.float64(0.964), 1.0)
+  D_lo histogram (0, (0,.25), [.25,.5), [.5,1), >=1): [0, 67, 33, 0, 0]
+
+== data aniso3_w8 160  n=100  status {'OK': 100}  seconds mean 78.4 max 159.1
+D_lo min/q1/med/q3/max/mean: [np.float64(0.2869), np.float64(0.587), np.float64(0.6807), np.float64(0.7685), np.float64(1.1066), np.float64(0.683)]
+  D_lo > 0.25: 100/100  CP95 (np.float64(0.964), 1.0)
+  D_lo > 0.5: 87/100  CP95 (np.float64(0.788), np.float64(0.929))
+  D_lo > 1.0: 5/100  CP95 (np.float64(0.016), np.float64(0.113))
+  D_lo >= 0.25 (bracket lower end): 100
+  stored global DROP: 100
+  B2: D_lo>=0.25 but stored non-DROP: 0;  D_hi<0.245 but stored DROP: 0;  straddling 0.25: 0
+  stored DROP with D_lo==0 (status): {}
+  datasets with an INCONCLUSIVE step: 100
+  B4: D_lo <= exact drop 2.0203: 100/100 CP95 (np.float64(0.964), 1.0)
+  D_lo histogram (0, (0,.25), [.25,.5), [.5,1), >=1): [0, 0, 13, 82, 5]
+
+== controls (B3)
+ring 1024 n 30 D_lo max 0.0 exact drop 0.0 violations of D_lo<=exact+0.005: 0 {'NODROP0_WITNESS': 30}
+torus2 96 n 30 D_lo max 0.0 exact drop 0.0044 violations of D_lo<=exact+0.005: 0 {'NODROP0_WITNESS': 30}
+torus3 24 n 30 D_lo max 0.0 exact drop 0.0529 violations of D_lo<=exact+0.005: 0 {'NODROP0_WITNESS': 30}

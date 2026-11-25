@@ -1,0 +1,12 @@
+adversarial_referee_2026-11-22.md
+external_referee_chatgpt_2026-11-22.md
+external_referee_chatgpt_round2_2026-11-22.md
+external_referee_chatgpt_round3_2026-11-23.md
+external_referee_chatgpt_round4_2026-11-24.md
+external_referee_chatgpt_round5_2026-11-24.md
+external_referee_chatgpt_round6_2026-11-24.md
+external_referee_gemini_round4_2026-11-24.md
+external_referee_gemini_round5_2026-11-24.md
+external_referee_gemini_round6_2026-11-24.md
+prior_art_hunter_2026-11-22.md
+reproducer_2026-11-22.md

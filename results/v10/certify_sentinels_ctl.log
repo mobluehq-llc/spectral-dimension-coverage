@@ -1,0 +1,11 @@
+1 10 {'kind': 'witcell', 'ds': 0, 'wit_status': 'witness'}
+2 10 {'kind': 'witcell', 'ds': 1, 'wit_status': 'witness'}
+3 10 {'kind': 'witcell', 'ds': 2, 'wit_status': 'witness'}
+4 10 {'kind': 'witcell', 'ds': 3, 'wit_status': 'witness'}
+5 10 {'kind': 'witcell', 'ds': 4, 'wit_status': 'witness'}
+6 10 {'kind': 'witcell', 'ds': 5, 'wit_status': 'witness'}
+7 10 {'kind': 'witcell', 'ds': 6, 'wit_status': 'witness'}
+8 10 {'kind': 'witcell', 'ds': 7, 'wit_status': 'witness'}
+9 10 {'kind': 'witcell', 'ds': 8, 'wit_status': 'witness'}
+10 10 {'kind': 'witcell', 'ds': 9, 'wit_status': 'witness'}
+done 2s

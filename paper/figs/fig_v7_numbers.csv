@@ -1,0 +1,45 @@
+figure,panel,name,archive_code,walkers_per_node,covered,answered,pct_answered,generated,pct_all,source
+fig1b-d/tableIV,replication,LocQuad,E1q,8,1452,2926,49.62,3600,40.33,results/amend9_b_table.csv
+fig1b-d/tableIV,replication,LocQuad,E1q,32,586,3195,18.34,3600,16.28,results/amend9_b_table.csv
+fig1b-d/tableIV,replication,LocQuad,E1q,128,129,3203,4.03,3600,3.58,results/amend9_b_table.csv
+fig1b-d/tableIV,replication,BiasAware-CV,E4c,8,2865,2925,97.95,3600,79.58,results/amend9_b_table.csv
+fig1b-d/tableIV,replication,BiasAware-CV,E4c,32,3079,3193,96.43,3600,85.53,results/amend9_b_table.csv
+fig1b-d/tableIV,replication,BiasAware-CV,E4c,128,3089,3197,96.62,3600,85.81,results/amend9_b_table.csv
+fig1b-d/tableIV,replication,MonoLP,E7,8,3577,3600,99.36,3600,99.36,results/amend9_b_table.csv
+fig1b-d/tableIV,replication,MonoLP,E7,32,3560,3600,98.89,3600,98.89,results/amend9_b_table.csv
+fig1b-d/tableIV,replication,MonoLP,E7,128,3569,3600,99.14,3600,99.14,results/amend9_b_table.csv
+fig1b-d/tableIV,fixed,LocQuad,E1q,8,1292,3200,40.38,3600,35.89,results_round3/r3_10c_pooled.csv (paper/tab_r3_10c_pooled.tex)
+fig1b-d/tableIV,fixed,LocQuad,E1q,32,627,3200,19.59,3600,17.42,results_round3/r3_10c_pooled.csv (paper/tab_r3_10c_pooled.tex)
+fig1b-d/tableIV,fixed,LocQuad,E1q,128,114,3200,3.56,3600,3.17,results_round3/r3_10c_pooled.csv (paper/tab_r3_10c_pooled.tex)
+fig1b-d/tableIV,fixed,BiasAware-CV,E4c,8,3123,3198,97.65,3600,86.75,results_round3/r3_10c_pooled.csv (paper/tab_r3_10c_pooled.tex)
+fig1b-d/tableIV,fixed,BiasAware-CV,E4c,32,3101,3198,96.97,3600,86.14,results_round3/r3_10c_pooled.csv (paper/tab_r3_10c_pooled.tex)
+fig1b-d/tableIV,fixed,BiasAware-CV,E4c,128,3070,3191,96.21,3600,85.28,results_round3/r3_10c_pooled.csv (paper/tab_r3_10c_pooled.tex)
+fig1b-d/tableIV,holdout,LocQuad,E1q,8,761,1327,57.35,2000,38.05,results_amend10_11/agg_amend11_cells.csv
+fig1b-d/tableIV,holdout,LocQuad,E1q,32,417,1597,26.11,2000,20.85,results_amend10_11/agg_amend11_cells.csv
+fig1b-d/tableIV,holdout,LocQuad,E1q,128,161,1605,10.03,2000,8.05,results_amend10_11/agg_amend11_cells.csv
+fig1b-d/tableIV,holdout,BiasAware-CV,E4c,8,1310,1327,98.72,2000,65.5,results_amend10_11/agg_amend11_cells.csv
+fig1b-d/tableIV,holdout,BiasAware-CV,E4c,32,1548,1596,96.99,2000,77.4,results_amend10_11/agg_amend11_cells.csv
+fig1b-d/tableIV,holdout,BiasAware-CV,E4c,128,1570,1605,97.82,2000,78.5,results_amend10_11/agg_amend11_cells.csv
+fig1b-d/tableIV,holdout,MonoLP,E7,8,1995,2000,99.75,2000,99.75,results_amend10_11/agg_amend11_cells.csv
+fig1b-d/tableIV,holdout,MonoLP,E7,32,1997,2000,99.85,2000,99.85,results_amend10_11/agg_amend11_cells.csv
+fig1b-d/tableIV,holdout,MonoLP,E7,128,1996,2000,99.8,2000,99.8,results_amend10_11/agg_amend11_cells.csv
+fig2,2D,TwoLine,E0,32,550,600,91.67,,,results/amend4_cell_summary.csv
+fig2,2D,LocLin-Under,E1u,32,490,600,81.67,,,results/amend4_cell_summary.csv
+fig2,2D,LocQuad,E1q,32,203,600,33.83,,,results/amend4_cell_summary.csv
+fig2,2D,TraceSecant,E2,32,501,548,91.42,,,results/amend4_cell_summary.csv
+fig2,2D,BiasAware-CV,E4c,32,578,600,96.33,,,results/amend4_cell_summary.csv
+fig2,2D,BiasAware-Rule,E4r,32,571,600,95.17,,,results/amend4_cell_summary.csv
+fig2,2D,StepParam,E6,32,595,600,99.17,,,results/amend4_cell_summary.csv
+fig2,2D,WML-Boot,Mb,32,546,552,98.91,,,results/raw_amend5.csv
+fig2,2D,Collapse-Opt,CL,32,405,600,67.5,,,results/raw_amend5.csv
+fig2,2D,MonoLP,E7,32,596,600,99.33,,,results/amend8_cell_table.csv
+fig2,3D,TwoLine,E0,32,432,626,69.01,,,results/amend4_cell_summary.csv
+fig2,3D,LocLin-Under,E1u,32,565,631,89.54,,,results/amend4_cell_summary.csv
+fig2,3D,LocQuad,E1q,32,132,631,20.92,,,results/amend4_cell_summary.csv
+fig2,3D,TraceSecant,E2,32,368,448,82.14,,,results/amend4_cell_summary.csv
+fig2,3D,BiasAware-CV,E4c,32,609,631,96.51,,,results/amend4_cell_summary.csv
+fig2,3D,BiasAware-Rule,E4r,32,599,631,94.93,,,results/amend4_cell_summary.csv
+fig2,3D,StepParam,E6,32,625,631,99.05,,,results/amend4_cell_summary.csv
+fig2,3D,WML-Boot,Mb,32,436,441,98.87,,,results/raw_amend5.csv
+fig2,3D,Collapse-Opt,CL,32,111,1000,11.1,,,results/raw_amend5.csv
+fig2,3D,MonoLP,E7,32,994,1000,99.4,,,results/amend8_cell_table.csv

@@ -1,0 +1,57 @@
+rows 5400 cells 6 datasets/cell/budget [100]
+identity with frozen est_E1b (cov, h, hw): 1800 / 1800
+LQ   wpn   8: cov exact 300/600 = 50.0% (45.9-54.1) | cov own-target 564/600 = 94.0% (91.8-95.8) | recentred 564/600 = 94.0% (91.8-95.8) | pointwise 0.826 | mean hw 0.577 | median worst|bias|/se 2.04 | mean h 2.49 | h at floor(0.7) 0.21 (LQ/RBC only)
+LQ   wpn  32: cov exact 159/600 = 26.5% (23.0-30.2) | cov own-target 556/600 = 92.7% (90.3-94.6) | recentred 556/600 = 92.7% (90.3-94.6) | pointwise 0.651 | mean hw 0.297 | median worst|bias|/se 3.49 | mean h 2.12 | h at floor(0.7) 0.33 (LQ/RBC only)
+LQ   wpn 128: cov exact 17/600 = 2.8% (1.7-4.5) | cov own-target 559/600 = 93.2% (90.8-95.1) | recentred 559/600 = 93.2% (90.8-95.1) | pointwise 0.504 | mean hw 0.165 | median worst|bias|/se 6.10 | mean h 1.45 | h at floor(0.7) 0.58 (LQ/RBC only)
+LQU  wpn   8: cov exact 345/600 = 57.5% (53.4-61.5) | cov own-target 572/600 = 95.3% (93.3-96.9) | recentred 572/600 = 95.3% (93.3-96.9) | pointwise 0.848 | mean hw 0.694 | median worst|bias|/se 1.38 | mean h 1.74 | h at floor(0.7) 0.37 (LQ/RBC only)
+LQU  wpn  32: cov exact 267/600 = 44.5% (40.5-48.6) | cov own-target 560/600 = 93.3% (91.0-95.2) | recentred 560/600 = 93.3% (91.0-95.2) | pointwise 0.727 | mean hw 0.372 | median worst|bias|/se 2.00 | mean h 1.48 | h at floor(0.7) 0.48 (LQ/RBC only)
+LQU  wpn 128: cov exact 137/600 = 22.8% (19.5-26.4) | cov own-target 562/600 = 93.7% (91.4-95.5) | recentred 562/600 = 93.7% (91.4-95.5) | pointwise 0.643 | mean hw 0.221 | median worst|bias|/se 3.06 | mean h 1.01 | h at floor(0.7) 0.74 (LQ/RBC only)
+RBC  wpn   8: cov exact 501/600 = 83.5% (80.3-86.4) | cov own-target 568/600 = 94.7% (92.6-96.3) | recentred 568/600 = 94.7% (92.6-96.3) | pointwise 0.917 | mean hw 1.029 | median worst|bias|/se 0.72 | mean h 2.49 | h at floor(0.7) 0.21 (LQ/RBC only)
+RBC  wpn  32: cov exact 398/600 = 66.3% (62.4-70.1) | cov own-target 561/600 = 93.5% (91.2-95.3) | recentred 561/600 = 93.5% (91.2-95.3) | pointwise 0.854 | mean hw 0.521 | median worst|bias|/se 1.33 | mean h 2.12 | h at floor(0.7) 0.33 (LQ/RBC only)
+RBC  wpn 128: cov exact 285/600 = 47.5% (43.4-51.6) | cov own-target 565/600 = 94.2% (92.0-95.9) | recentred 565/600 = 94.2% (92.0-95.9) | pointwise 0.803 | mean hw 0.282 | median worst|bias|/se 2.35 | mean h 1.45 | h at floor(0.7) 0.58 (LQ/RBC only)
+est                   LQ   LQU   RBC
+fam        L   wpn                  
+aniso2_w16 128 8    0.88  0.88  0.95
+               32   0.56  0.64  0.97
+               128  0.15  0.37  0.87
+           192 8    0.64  0.70  0.93
+               32   0.19  0.41  0.75
+               128  0.00  0.30  0.54
+           256 8    0.17  0.28  0.73
+               32   0.14  0.42  0.46
+               128  0.00  0.33  0.40
+           320 8    0.15  0.30  0.59
+               32   0.08  0.31  0.35
+               128  0.00  0.27  0.26
+aniso3_w8  96  8    0.88  0.91  0.92
+               32   0.60  0.64  0.82
+               128  0.02  0.07  0.58
+           128 8    0.28  0.38  0.89
+               32   0.02  0.25  0.63
+               128  0.00  0.03  0.20
+       fam   L  wpn  worst_bias  sd_at_worst  ratio  t_index
+aniso2_w16 128    8       0.103        0.113  0.916        3
+aniso2_w16 128   32       0.100        0.059  1.689        3
+aniso2_w16 128  128       0.096        0.031  3.083        3
+aniso2_w16 192    8       0.160        0.096  1.665        4
+aniso2_w16 192   32       0.157        0.044  3.560        4
+aniso2_w16 192  128       0.141        0.022  6.298        4
+aniso2_w16 256    8       0.171        0.059  2.904        4
+aniso2_w16 256   32       0.156        0.038  4.137        4
+aniso2_w16 256  128       0.143        0.019  7.720        4
+aniso2_w16 320    8       0.166        0.055  3.041        4
+aniso2_w16 320   32       0.159        0.033  4.744        4
+aniso2_w16 320  128       0.136        0.018  7.458        4
+ aniso3_w8  96    8       0.100        0.151  0.662        2
+ aniso3_w8  96   32       0.419        0.286  1.462        6
+ aniso3_w8  96  128       0.420        0.127  3.321        6
+ aniso3_w8 128    8       0.287        0.115  2.487        4
+ aniso3_w8 128   32       0.280        0.060  4.673        4
+ aniso3_w8 128  128       0.265        0.032  8.221        4
+       median       min       max
+wpn                              
+8    2.075809  0.662195  3.040930
+32   3.848693  1.462131  4.743699
+128  6.878057  3.082582  8.221484
+stored E1q on the same cell-datasets: {'mean': {8: 0.5, 32: 0.265, 128: 0.028}, 'size': {8: 600, 32: 600, 128: 600}} regenerated LQ: {8: 0.5, 32: 0.265, 128: 0.028}
+regeneration reproduces stored cov/h/hw: 1800 / 1800

@@ -1,7 +1,7 @@
 # ROUND 4 cheap checks: EXPLORATORY specification (written and committed BEFORE any of these checks is run)
 
 Date: 2026-11-23. Status: **EXPLORATORY diagnostics.** They answer the cheap checks named by external referees Gemini and ChatGPT in
-round 4 (`the round-4 referee report (not distributed)`). They feed no gate, bar or verdict. No estimator, bar, seed or cell
+round 4 (`ideas/A_spectral_dimension_coverage/REVIEWS/*round4*`). They feed no gate, bar or verdict. No estimator, bar, seed or cell
 definition is changed (the six frozen estimator files stay byte-identical to 1ba9ca6; the new scripts only call their functions).
 Any fix suggested by a result would be a new pre-registered amendment. Results go to `ROUND4_CHECKS.md`; raw output to `round4_checks/`.
 Environment: host-D, the pinned venv of REPRO_CHECK.md (`python -I`, numpy 2.5.5), at most 6 cores (OMP/OPENBLAS/MKL = 1 per process).

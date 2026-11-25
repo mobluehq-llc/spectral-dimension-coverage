@@ -1,0 +1,15 @@
+import pandas as pd, numpy as np
+d=pd.read_csv('results/nodrop_data.csv')
+p2=pd.read_csv('results/rt_monolp_p2.csv'); p2=p2[p2.variant=='B0'][['cell','ds','j_drop','e7_neg']].rename(columns={'j_drop':'p2_j','e7_neg':'p2_e7'})
+st=pd.read_csv('results/raw_amend9_a.csv'); print([c for c in st.columns][:25])
+d=d.merge(p2,on=['cell','ds'],how='left')
+for (f,Lv),g in d.groupby(['fam','L']):
+    print('\n==',f,Lv,len(g))
+    print(g.g_outcome.value_counts().to_dict())
+    print('joint drop',int(g.j_drop.sum()),'e7 neg',int(g.e7_neg.sum()),'joint infeas',int(g.j_infeasible.sum()),'amb',int(g.j_amb.sum()))
+    print(pd.crosstab(g.g_outcome,g.j_drop))
+    print('agree w/ rt_monolp_p2 joint:',int((g.j_drop==g.p2_j).sum()),'/',len(g),' e7:',int((g.e7_neg==g.p2_e7).sum()))
+    print('dropwitness found',int(g.dw_found.sum()),' WITNESS&dw (ambiguous):',int(((g.g_outcome=='WITNESS')&(g.dw_found==1)).sum()))
+    print('nlp mean/max',g.g_nlp.mean(),g.g_nlp.max(),'sec mean',g.g_seconds.mean(),'gate',int(g.g_gate.sum()),'unres',g.g_unres.sum() if 'g_unres' in g else '')
+    bad=g[(g.j_drop==1)&(g.g_outcome!='DROP')]; print('joint drop but global not DROP:',len(bad))
+    print('mindelta of witnesses: min/median',g.g_mindelta.min(),g.g_mindelta.median())

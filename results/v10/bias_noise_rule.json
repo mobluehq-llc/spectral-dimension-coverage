@@ -1,0 +1,23 @@
+{
+ "n_cells": 16,
+ "n_rising": 7,
+ "share_rising": 0.4375,
+ "total_misses": 7567,
+ "misses_R1_gt2": 0,
+ "misses_R1_gt1": 600,
+ "share_misses_R1_gt2": 0.0,
+ "share_misses_R1_gt1": 0.07929166116030131,
+ "dropped": [
+  "('aniso3_w8', 48, 'answered<100', 32, 0)",
+  "('aniso3_w8', 48, 'answered<100', 8, 0)",
+  "('aniso3_w8', 48, 'answered<100', 128, 0)",
+  "('aniso3_w8', 64, 'answered<100', 32, 0)",
+  "('aniso3_w8', 64, 'answered<100', 8, 0)",
+  "('aniso3_w8', 64, 'answered<100', 128, 0)"
+ ],
+ "raw_sha256": "fe21111cc822eb32757f17c84a2ea417496f3a4d791370e832889f30ef87a557",
+ "code_sha256": "fe281abb56853f759a1bb5a355cf98ef262dcda86b3b8572a209b6551399819a",
+ "clause_i": false,
+ "clause_ii": false,
+ "explained": false
+}

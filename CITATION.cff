@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
 title: "Do error bands for the scale-dependent spectral dimension cover the exact curve? A benchmark on finite graphs with a frozen replication and a holdout"
 type: software
-version: "6"
+version: "1.1"
 date-released: "2026-11-24"
 authors:
   - family-names: Faust
@@ -10,6 +10,6 @@ authors:
     affiliation: "MOBLUEHQ, Inc."
     email: adam@mobluehq.com
 license: MIT
-repository-code: "to be added"
-doi: "to be added (Zenodo)"
+repository-code: "https://github.com/mobluehq-llc/spectral-dimension-coverage"
+doi: "10.5281/zenodo.24488979"
 abstract: "Reproducibility bundle for paper A (spectral-dimension error-band coverage benchmark): paper, supplement, code, plans, stored per-dataset results, and a one-command regeneration of every table and gate verdict."

@@ -1,0 +1,9 @@
+intact: (True, 'ok', -5.347261944793464)
+eps1 + 1000 (objective must fail): (False, 'objective', 994.6527380552066)
+v1 - 1000 (g<0, must fail): (False, 'atom', -1005.3472619447936)
+u[0] + 1000 (g < 0 somewhere, must fail): (False, 'atom', -973.1844793774551)
+u[1] = -0.001 (negative multiplier, must fail): (False, 'negative_u', nan)
+u[0] + 0.001 (any u >= 0 is self-consistent here; may pass, reported only): (True, 'ok', -5.348229782010897)
+tiling intact: True
+tiling with a gap of one pad (must be False): False
+tiling with a leaf removed (must be False): False

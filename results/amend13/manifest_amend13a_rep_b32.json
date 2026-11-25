@@ -1,0 +1,19 @@
+{
+ "complete": true,
+ "csv_sha256": "6bf4c40d643f735b9968c9b27f8c876dba05aa6639b1782e4f21025051ce8131",
+ "errors": [],
+ "finished": "2026-11-24 00:46:09",
+ "frozen": {
+  "p22honest.py": "871ed8b3e2a5049f23fa8c84c1a8f50e8a5556363f1c3e3f35096925ff192216",
+  "p22lib.py": "a4517f3e056246266a6eaae2db0063b0d5fb1e2fb903946b40eb4248b3d43b91",
+  "run_p22.py": "4a1937dff73cc1cb6f52bb67d5f5e7ec8f0b0bcd9087053f05feba375bc9848d"
+ },
+ "items_present": 1280,
+ "items_sha256": "a5b5f8dbcdbec0045126e19132abb9d2467b19a26949c9ce1766a53f225ba6fc",
+ "n_rows": 25600,
+ "name": "amend13a_rep_b32",
+ "numpy": "2.5.5",
+ "p22amend13_sha256": "2101daaea7e5c3ffc855ca6f8b5042b6812f1a70fe13eb9fe2dba06bc516d646",
+ "runner_sha256": "0fc9db9b11fb946d00e25938b704c77c119412fca0174c11e8d9fe15b2df7c73",
+ "tasks_expected": 1280
+}

@@ -1,0 +1,36 @@
+==================== Amendment 13(c) EXPLORATORY: two-variable scaling of the minimum detectable size (fit only; no gate)
+wpn                           32     128
+arm    fam        src                   
+E4c    aniso2_w12 13a_hold    NaN  384.0
+       aniso2_w16 13a_rep     NaN  384.0
+       aniso3_w6  13a_hold    NaN  192.0
+       aniso3_w8  13a_rep   160.0  112.0
+E4c_V2 aniso2_w12 13a_hold    NaN  384.0
+       aniso2_w16 13a_rep     NaN  384.0
+       aniso3_w6  13a_hold    NaN  192.0
+       aniso3_w8  13a_rep   192.0  112.0
+E4o    aniso2_w12 13a_hold    NaN  256.0
+       aniso2_w16 13a_rep     NaN  320.0
+       aniso3_w6  13a_hold    NaN   96.0
+       aniso3_w8  13a_rep   128.0   80.0
+E4o_V2 aniso2_w12 13a_hold    NaN  256.0
+       aniso2_w16 13a_rep     NaN  320.0
+       aniso3_w6  13a_hold    NaN  128.0
+       aniso3_w8  13a_rep   128.0   80.0
+E4c M1 log2 Lmin = a + b log2 W + c log2 dd: n=5 a=10.03 b(W)=-0.20 [-0.47,-0.19] c(dd)=-1.68 [-2.03,-1.53] resid sd 0.14 log2 units (bootstrap reps 200)
+E4c M2 log2 Nmin = a + b log2 W + c log2 dd: n=5 a=14.06 b(W)=-0.24 [-0.52,-0.23] c(dd)=0.45 [0.05,0.60] resid sd 0.21 log2 units (bootstrap reps 200)
+   E4c law-implied invariant N*W*dd^(7/3): min 594496 max 4725576 ratio 7.95 (largest adjacent grid ratio 1.50)
+   E4c out-of-sample (fit on rep design, predict hold design, M2): n=2; |log2 error| median 0.21, max 0.41; within one grid step (0.58): 2/2
+   E4c censoring consistency (M1 prediction exceeds the largest tested L at 'not reached' points): 4/7
+E4c_V2 M1 log2 Lmin = a + b log2 W + c log2 dd: n=5 a=10.95 b(W)=-0.33 [-0.47,-0.19] c(dd)=-1.68 [-1.89,-1.42] resid sd 0.14 log2 units (bootstrap reps 200)
+E4c_V2 M2 log2 Nmin = a + b log2 W + c log2 dd: n=5 a=14.98 b(W)=-0.37 [-0.50,-0.23] c(dd)=0.45 [0.22,0.60] resid sd 0.21 log2 units (bootstrap reps 200)
+   E4c_V2 law-implied invariant N*W*dd^(7/3): min 594496 max 4725576 ratio 7.95 (largest adjacent grid ratio 1.50)
+   E4c_V2 out-of-sample (fit on rep design, predict hold design, M2): n=2; |log2 error| median 0.21, max 0.41; within one grid step (0.58): 2/2
+   E4c_V2 censoring consistency (M1 prediction exceeds the largest tested L at 'not reached' points): 6/7
+E4o_V2 M1 log2 Lmin = a + b log2 W + c log2 dd: n=5 a=10.36 b(W)=-0.31 [-0.43,-0.31] c(dd)=-1.78 [-2.25,-1.78] resid sd 0.18 log2 units (bootstrap reps 200)
+E4o_V2 M2 log2 Nmin = a + b log2 W + c log2 dd: n=5 a=14.38 b(W)=-0.35 [-0.46,-0.35] c(dd)=0.35 [-0.12,0.35] resid sd 0.37 log2 units (bootstrap reps 200)
+   E4o_V2 law-implied invariant N*W*dd^(7/3): min 396331 max 3375412 ratio 8.52 (largest adjacent grid ratio 1.50)
+   E4o_V2 out-of-sample (fit on rep design, predict hold design, M2): n=2; |log2 error| median 0.44, max 0.74; within one grid step (0.58): 1/2
+   E4o_V2 censoring consistency (M1 prediction exceeds the largest tested L at 'not reached' points): 3/7
+E7: 0 finite points, no fit
+Reading rule (fixed in PLAN): fit only. A coefficient CI that contains the law-implied exponent (b_W = -1 in M2) is reported as 'not rejected', never as 'confirmed'; the data have only four families, two distinct drops and at most three budgets.

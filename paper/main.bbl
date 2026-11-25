@@ -1,0 +1,243 @@
+%apsrev4-2.bst 2019-01-14 (MD) hand-edited version of apsrev4-1.bst
+%Control: key (0)
+%Control: author (8) initials jnrlst
+%Control: editor formatted (1) identically to author
+%Control: production of article title (0) allowed
+%Control: page (0) single
+%Control: year (1) truncated
+%Control: production of eprint (0) enabled
+\begin{thebibliography}{18}%
+\makeatletter
+\providecommand \@ifxundefined [1]{%
+ \@ifx{#1\undefined}
+}%
+\providecommand \@ifnum [1]{%
+ \ifnum #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \@ifx [1]{%
+ \ifx #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \natexlab [1]{#1}%
+\providecommand \enquote  [1]{``#1''}%
+\providecommand \bibnamefont  [1]{#1}%
+\providecommand \bibfnamefont [1]{#1}%
+\providecommand \citenamefont [1]{#1}%
+\providecommand \href@noop [0]{\@secondoftwo}%
+\providecommand \href [0]{\begingroup \@sanitize@url \@href}%
+\providecommand \@href[1]{\@@startlink{#1}\@@href}%
+\providecommand \@@href[1]{\endgroup#1\@@endlink}%
+\providecommand \@sanitize@url [0]{\catcode `\\12\catcode `\$12\catcode
+  `\&12\catcode `\#12\catcode `\^12\catcode `\_12\catcode `\%12\relax}%
+\providecommand \@@startlink[1]{}%
+\providecommand \@@endlink[0]{}%
+\providecommand \url  [0]{\begingroup\@sanitize@url \@url }%
+\providecommand \@url [1]{\endgroup\@href {#1}{\urlprefix }}%
+\providecommand \urlprefix  [0]{URL }%
+\providecommand \Eprint [0]{\href }%
+\providecommand \doibase [0]{https://doi.org/}%
+\providecommand \selectlanguage [0]{\@gobble}%
+\providecommand \bibinfo  [0]{\@secondoftwo}%
+\providecommand \bibfield  [0]{\@secondoftwo}%
+\providecommand \translation [1]{[#1]}%
+\providecommand \BibitemOpen [0]{}%
+\providecommand \bibitemStop [0]{}%
+\providecommand \bibitemNoStop [0]{.\EOS\space}%
+\providecommand \EOS [0]{\spacefactor3000\relax}%
+\providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
+\let\auto@bib@innerbib\@empty
+%</preamble>
+\bibitem [{\citenamefont {Ambj{\o}rn}\ \emph {et~al.}(2005)\citenamefont
+  {Ambj{\o}rn}, \citenamefont {Jurkiewicz},\ and\ \citenamefont
+  {Loll}}]{ajl2005}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Ambj{\o}rn}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Jurkiewicz}},\ and\ \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Loll}},\ }\bibfield  {title} {\bibinfo {title} {The spectral dimension of
+  the universe is scale dependent},\ }\href
+  {https://doi.org/10.1103/PhysRevLett.95.171301} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {95}},\
+  \bibinfo {pages} {171301} (\bibinfo {year} {2005})},\ \Eprint
+  {https://arxiv.org/abs/hep-th/0505113} {arXiv:hep-th/0505113} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Eichhorn}\ and\ \citenamefont
+  {Mizera}(2014)}]{em2014}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Eichhorn}}\ and\ \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Mizera}},\ }\bibfield  {title} {\bibinfo {title} {Spectral dimension in
+  causal set quantum gravity},\ }\href
+  {https://doi.org/10.1088/0264-9381/31/12/125007} {\bibfield  {journal}
+  {\bibinfo  {journal} {Class. Quantum Grav.}\ }\textbf {\bibinfo {volume}
+  {31}},\ \bibinfo {pages} {125007} (\bibinfo {year} {2014})},\ \Eprint
+  {https://arxiv.org/abs/1311.2530} {arXiv:1311.2530} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Belenchia}\ \emph {et~al.}(2016)\citenamefont
+  {Belenchia}, \citenamefont {Benincasa}, \citenamefont {Marcian{\`o}},\ and\
+  \citenamefont {Modesto}}]{belenchia2016}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Belenchia}}, \bibinfo {author} {\bibfnamefont {D.~M.~T.}\ \bibnamefont
+  {Benincasa}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Marcian{\`o}}},\ and\ \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
+  {Modesto}},\ }\bibfield  {title} {\bibinfo {title} {Spectral dimension from
+  nonlocal dynamics on causal sets},\ }\href
+  {https://doi.org/10.1103/PhysRevD.93.044017} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev. D}\ }\textbf {\bibinfo {volume} {93}},\ \bibinfo
+  {pages} {044017} (\bibinfo {year} {2016})},\ \Eprint
+  {https://arxiv.org/abs/1507.00330} {arXiv:1507.00330} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Carlip}(2015)}]{carlip2015}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Carlip}},\ }\bibfield  {title} {\bibinfo {title} {Dimensional reduction in
+  causal set gravity},\ }\href {https://doi.org/10.1088/0264-9381/32/23/232001}
+  {\bibfield  {journal} {\bibinfo  {journal} {Class. Quantum Grav.}\ }\textbf
+  {\bibinfo {volume} {32}},\ \bibinfo {pages} {232001} (\bibinfo {year}
+  {2015})},\ \Eprint {https://arxiv.org/abs/1506.08775} {arXiv:1506.08775}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Mill{\'a}n}\ \emph {et~al.}(2021)\citenamefont
+  {Mill{\'a}n}, \citenamefont {Gori}, \citenamefont {Battiston}, \citenamefont
+  {Enss},\ and\ \citenamefont {Defenu}}]{millan2021}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.~P.}\ \bibnamefont
+  {Mill{\'a}n}}, \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Gori}},
+  \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Battiston}}, \bibinfo
+  {author} {\bibfnamefont {T.}~\bibnamefont {Enss}},\ and\ \bibinfo {author}
+  {\bibfnamefont {N.}~\bibnamefont {Defenu}},\ }\bibfield  {title} {\bibinfo
+  {title} {Complex networks with tuneable spectral dimension as a universality
+  playground},\ }\href {https://doi.org/10.1103/PhysRevResearch.3.023015}
+  {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. Research}\ }\textbf
+  {\bibinfo {volume} {3}},\ \bibinfo {pages} {023015} (\bibinfo {year}
+  {2021})},\ \Eprint {https://arxiv.org/abs/2006.10421} {arXiv:2006.10421}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Grimaldi}\ \emph {et~al.}(2026)\citenamefont
+  {Grimaldi}, \citenamefont {Villegas}, \citenamefont {Vezzani}, \citenamefont
+  {Burioni}, \citenamefont {Cassi},\ and\ \citenamefont
+  {Gabrielli}}]{grimaldi2026}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
+  {Grimaldi}}, \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Villegas}},
+  \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Vezzani}}, \bibinfo
+  {author} {\bibfnamefont {R.}~\bibnamefont {Burioni}}, \bibinfo {author}
+  {\bibfnamefont {D.}~\bibnamefont {Cassi}},\ and\ \bibinfo {author}
+  {\bibfnamefont {A.}~\bibnamefont {Gabrielli}},\ }\bibfield  {title} {\bibinfo
+  {title} {Asymptotic versus mesoscopic spectral dimensions in networks and
+  inhomogeneous structures},\ }\href {https://doi.org/10.1103/zdpg-dr6t}
+  {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. E}\ }\textbf {\bibinfo
+  {volume} {114}},\ \bibinfo {pages} {L022301} (\bibinfo {year} {2026})},\
+  \Eprint {https://arxiv.org/abs/2510.20520} {arXiv:2510.20520} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Ga{\v{s}}par}\ and\ \citenamefont
+  {Kukal}(2022)}]{gk2022}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Ga{\v{s}}par}}\ and\ \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Kukal}},\ }\bibfield  {title} {\bibinfo {title} {Stochastic modelling of
+  fractal diffusion and dimension estimation},\ }\href
+  {https://doi.org/10.1016/j.physa.2022.127624} {\bibfield  {journal} {\bibinfo
+   {journal} {Physica A}\ }\textbf {\bibinfo {volume} {602}},\ \bibinfo {pages}
+  {127624} (\bibinfo {year} {2022})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Hall}\ and\ \citenamefont
+  {Horowitz}(2013)}]{hallhorowitz2013}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {Hall}}\ and\ \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Horowitz}},\ }\bibfield  {title} {\bibinfo {title} {A simple bootstrap
+  method for constructing nonparametric confidence bands for functions},\
+  }\href {https://doi.org/10.1214/13-AOS1137} {\bibfield  {journal} {\bibinfo
+  {journal} {Ann. Stat.}\ }\textbf {\bibinfo {volume} {41}},\ \bibinfo {pages}
+  {1892} (\bibinfo {year} {2013})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Calonico}\ \emph {et~al.}(2018)\citenamefont
+  {Calonico}, \citenamefont {Cattaneo},\ and\ \citenamefont
+  {Farrell}}]{ccf2018}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Calonico}}, \bibinfo {author} {\bibfnamefont {M.~D.}\ \bibnamefont
+  {Cattaneo}},\ and\ \bibinfo {author} {\bibfnamefont {M.~H.}\ \bibnamefont
+  {Farrell}},\ }\bibfield  {title} {\bibinfo {title} {On the effect of bias
+  estimation on coverage accuracy in nonparametric inference},\ }\href
+  {https://doi.org/10.1080/01621459.2017.1285776} {\bibfield  {journal}
+  {\bibinfo  {journal} {J. Am. Stat. Assoc.}\ }\textbf {\bibinfo {volume}
+  {113}},\ \bibinfo {pages} {767} (\bibinfo {year} {2018})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Calonico}\ \emph {et~al.}(2022)\citenamefont
+  {Calonico}, \citenamefont {Cattaneo},\ and\ \citenamefont
+  {Farrell}}]{ccf2022}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Calonico}}, \bibinfo {author} {\bibfnamefont {M.~D.}\ \bibnamefont
+  {Cattaneo}},\ and\ \bibinfo {author} {\bibfnamefont {M.~H.}\ \bibnamefont
+  {Farrell}},\ }\bibfield  {title} {\bibinfo {title} {Coverage error optimal
+  confidence intervals for local polynomial regression},\ }\href
+  {https://doi.org/10.3150/21-BEJ1445} {\bibfield  {journal} {\bibinfo
+  {journal} {Bernoulli}\ }\textbf {\bibinfo {volume} {28}},\ \bibinfo {pages}
+  {2998} (\bibinfo {year} {2022})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Low}(1997)}]{low1997}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.~G.}\ \bibnamefont
+  {Low}},\ }\bibfield  {title} {\bibinfo {title} {On nonparametric confidence
+  intervals},\ }\href {https://doi.org/10.1214/aos/1030741084} {\bibfield
+  {journal} {\bibinfo  {journal} {Ann. Stat.}\ }\textbf {\bibinfo {volume}
+  {25}},\ \bibinfo {pages} {2547} (\bibinfo {year} {1997})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Stark}(1992)}]{stark1992}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.~B.}\ \bibnamefont
+  {Stark}},\ }\bibfield  {title} {\bibinfo {title} {Inference in
+  infinite-dimensional inverse problems: Discretization and duality},\ }\href
+  {https://doi.org/10.1029/92JB00739} {\bibfield  {journal} {\bibinfo
+  {journal} {J. Geophys. Res.}\ }\textbf {\bibinfo {volume} {97}},\ \bibinfo
+  {pages} {14055} (\bibinfo {year} {1992})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Lawrence}(2024)}]{lawrence2024}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Lawrence}},\ }\href@noop {} {\bibinfo {title} {Model-free spectral
+  reconstruction via {L}agrange duality}} (\bibinfo {year} {2024}),\ \Eprint
+  {https://arxiv.org/abs/2408.11766} {arXiv:2408.11766} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Mutzel}\ and\ \citenamefont
+  {Tilloy}(2026)}]{mutzel2026}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Mutzel}}\ and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Tilloy}},\ }\href@noop {} {\bibinfo {title} {Certified spectral functions
+  from lattice {M}onte {C}arlo data}} (\bibinfo {year} {2026}),\ \Eprint
+  {https://arxiv.org/abs/2606.09791} {arXiv:2606.09791} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Lehner}(2026)}]{lehner2026}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Lehner}},\ }\href@noop {} {\bibinfo {title} {Interpretable uncertainties for
+  bounds on spectral functionals from {E}uclidean correlators}} (\bibinfo
+  {year} {2026}),\ \Eprint {https://arxiv.org/abs/2611.24374}
+  {arXiv:2611.24374} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Armstrong}\ and\ \citenamefont
+  {Koles{\'a}r}(2018)}]{ak2018}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.~B.}\ \bibnamefont
+  {Armstrong}}\ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Koles{\'a}r}},\ }\bibfield  {title} {\bibinfo {title} {Optimal inference in
+  a class of regression models},\ }\href@noop {} {\bibfield  {journal}
+  {\bibinfo  {journal} {Econometrica}\ }\textbf {\bibinfo {volume} {86}},\
+  \bibinfo {pages} {655} (\bibinfo {year} {2018})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Armstrong}\ and\ \citenamefont
+  {Koles{\'a}r}(2020)}]{ak2020}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.~B.}\ \bibnamefont
+  {Armstrong}}\ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Koles{\'a}r}},\ }\bibfield  {title} {\bibinfo {title} {Simple and honest
+  confidence intervals in nonparametric regression},\ }\href@noop {} {\bibfield
+   {journal} {\bibinfo  {journal} {Quantitative Economics}\ }\textbf {\bibinfo
+  {volume} {11}},\ \bibinfo {pages} {1} (\bibinfo {year} {2020})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Faust}(2026)}]{archive2026}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Faust}},\ }\href {https://doi.org/10.5281/zenodo.24488979} {\bibinfo {title}
+  {spectral-dimension-coverage: code, pre-registered plans and stored
+  results}},\ \bibinfo {howpublished} {Zenodo} (\bibinfo {year} {2026}),\
+  \bibinfo {note}
+  {\url{https://github.com/mobluehq-llc/spectral-dimension-coverage}}\BibitemShut
+  {NoStop}%
+\end{thebibliography}%

@@ -1,0 +1,13 @@
+D_lo          False  True 
+g_outcome                 
+DROP              4     33
+INCONCLUSIVE      5      0
+WITNESS          58      0
+stored DROP: D_lo<0.25 count 4 their D_lo range 0.24649414062499997 0.2495654296875  D_hi<=0.25 count 1
+stored non-DROP: D_lo>0.25 0 max D_lo 0.24837890625  D_hi>0.25+1e-9: 2               count    median       max
+g_outcome                              
+INCONCLUSIVE      5  0.246035  0.248379
+WITNESS          58  0.186948  0.241006
+2D D_lo percentiles 5/10/90/95/99 [0.125 0.148 0.301 0.317 0.392] D_hi-D_lo max 0.0035107421875000266
+2D nlp mean 466.61 3D 976.89 total cpu-s 18894.693707227707
+3D D_lo pcts 5/10/90/95 [0.422 0.484 0.9   0.957]

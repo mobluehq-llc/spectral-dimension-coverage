@@ -1,0 +1,10 @@
+E1q fixed wpn 8: answered 3200 | cov exact 1292/3200 = 40.4% | cov own-target 3030/3200 = 94.7% | h at floor 0.7: 23.7% | h at ceiling 4.0: 41.0% | mean h 2.31
+E1q fixed wpn 32: answered 3200 | cov exact 627/3200 = 19.6% | cov own-target 3019/3200 = 94.3% | h at floor 0.7: 40.0% | h at ceiling 4.0: 26.8% | mean h 1.78
+E1q fixed wpn 128: answered 3200 | cov exact 114/3200 = 3.6% | cov own-target 2977/3200 = 93.0% | h at floor 0.7: 62.9% | h at ceiling 4.0: 13.9% | mean h 1.27
+noiseless LocQuad C256xC16 h=0.7 t=96: d_pop 1.7625 | exact d 1.8960 | bias -0.1335
+secant certificate C768xC16 exact returns: d(24) >= 1.6744 | d(6144) <= 1.1824 | certified drop >= 0.4920 | exact d(24) 2.0044 d(6144) 1.0000
+exact d C96xC16 at t=96,163,400: 1.896 1.500 1.015
+exact d C256xC16 at t=96,163,400: 1.896 1.500 1.015
+exact d C768xC16 at t=96,163,400: 1.896 1.500 1.015
+exact d C64xC8xC8 at t=34,62,192: 2.850 2.004 1.009
+exact d C192xC8xC8 at t=34,62,192: 2.850 2.004 1.009

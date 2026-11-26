@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{18}%
+\begin{thebibliography}{17}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -130,16 +130,6 @@
   {volume} {114}},\ \bibinfo {pages} {L022301} (\bibinfo {year} {2026})},\
   \Eprint {https://arxiv.org/abs/2510.20520} {arXiv:2510.20520} \BibitemShut
   {NoStop}%
-\bibitem [{\citenamefont {Ga{\v{s}}par}\ and\ \citenamefont
-  {Kukal}(2022)}]{gk2022}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
-  {Ga{\v{s}}par}}\ and\ \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
-  {Kukal}},\ }\bibfield  {title} {\bibinfo {title} {Stochastic modelling of
-  fractal diffusion and dimension estimation},\ }\href
-  {https://doi.org/10.1016/j.physa.2022.127624} {\bibfield  {journal} {\bibinfo
-   {journal} {Physica A}\ }\textbf {\bibinfo {volume} {602}},\ \bibinfo {pages}
-  {127624} (\bibinfo {year} {2022})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Hall}\ and\ \citenamefont
   {Horowitz}(2013)}]{hallhorowitz2013}%
   \BibitemOpen
@@ -175,14 +165,6 @@
   {https://doi.org/10.3150/21-BEJ1445} {\bibfield  {journal} {\bibinfo
   {journal} {Bernoulli}\ }\textbf {\bibinfo {volume} {28}},\ \bibinfo {pages}
   {2998} (\bibinfo {year} {2022})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Low}(1997)}]{low1997}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.~G.}\ \bibnamefont
-  {Low}},\ }\bibfield  {title} {\bibinfo {title} {On nonparametric confidence
-  intervals},\ }\href {https://doi.org/10.1214/aos/1030741084} {\bibfield
-  {journal} {\bibinfo  {journal} {Ann. Stat.}\ }\textbf {\bibinfo {volume}
-  {25}},\ \bibinfo {pages} {2547} (\bibinfo {year} {1997})}\BibitemShut
-  {NoStop}%
 \bibitem [{\citenamefont {Stark}(1992)}]{stark1992}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.~B.}\ \bibnamefont
@@ -238,6 +220,16 @@
   {spectral-dimension-coverage: code, pre-registered plans and stored
   results}},\ \bibinfo {howpublished} {Zenodo} (\bibinfo {year} {2026}),\
   \bibinfo {note}
-  {\url{https://github.com/mobluehq-llc/spectral-dimension-coverage}}\BibitemShut
+  {{\footnotesize\mbox{\url{github.com/mobluehq-llc/spectral-dimension-coverage}}}}\BibitemShut
   {NoStop}%
+\bibitem [{\citenamefont {Ga{\v{s}}par}\ and\ \citenamefont
+  {Kukal}(2022)}]{gk2022}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Ga{\v{s}}par}}\ and\ \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Kukal}},\ }\bibfield  {title} {\bibinfo {title} {Stochastic modelling of
+  fractal diffusion and dimension estimation},\ }\href
+  {https://doi.org/10.1016/j.physa.2022.127624} {\bibfield  {journal} {\bibinfo
+   {journal} {Physica A}\ }\textbf {\bibinfo {volume} {602}},\ \bibinfo {pages}
+  {127624} (\bibinfo {year} {2022})}\BibitemShut {NoStop}%
 \end{thebibliography}%

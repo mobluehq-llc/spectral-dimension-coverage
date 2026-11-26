@@ -1,15 +1,20 @@
 # Do error bands for the scale-dependent spectral dimension cover the exact curve?
 
-Reproducibility bundle for paper A, **version 1.1 (24 November 2026)**, matching the arXiv version 8 text. v1.0 (the version-6 text) is Zenodo DOI 10.5281/zenodo.24488979; v1.1 is Zenodo DOI 10.5281/zenodo.24520991. Paper: *More walkers, worse error bars: bias-driven undercoverage and structural bounds for the scale-dependent spectral dimension* (`paper/A_arxiv_v8.pdf`, supplement `paper/A_arxiv_supplement_v8.pdf`).
+Reproducibility bundle for paper A, **version 1.2 (25 November 2026)**, matching the arXiv version 17 text. v1.0 (the version-6 text) is Zenodo DOI 10.5281/zenodo.24488979; v1.1 (the version-8 text) is Zenodo DOI 10.5281/zenodo.24520991; v1.2 is the Zenodo version minted from this release (see the all-versions DOI below). Paper: *More walkers, worse error bars: bias-driven undercoverage and structural bounds for the scale-dependent spectral dimension* (`paper/A_arxiv_v17.pdf`, supplement `paper/A_arxiv_supplement_v17.pdf`).
 
 **Author:** Adam Faust, MOBLUEHQ, Inc. **Contact:** adam@mobluehq.com
-**Citation:** this version (v1.1): [10.5281/zenodo.24520991](https://doi.org/10.5281/zenodo.24520991); all versions: [10.5281/zenodo.24488978](https://doi.org/10.5281/zenodo.24488978). See `CITATION.cff`.
+**Citation:** v1.1: [10.5281/zenodo.24520991](https://doi.org/10.5281/zenodo.24520991); all versions (resolves to the latest, v1.2): [10.5281/zenodo.24488978](https://doi.org/10.5281/zenodo.24488978). See `CITATION.cff`.
 
 ## What the paper is
 Claims that the spectral dimension of a network or quantum-gravity model flows with scale rest on the log-derivative of a noisy return probability on a
 finite graph. The paper tests error bands against a known truth, on tori and products of cycles whose exact d_s(t) follows from the spectrum, with bars fixed
 before each run, using a frozen-code replication, a holdout, and corrective reanalyses. Gated and exploratory results are labelled as such. The pre-registered
 plan with all twelve amendments is `plans/PLAN.md`; every number in the paper is mapped to a stored file in `CLAIMS.md`.
+
+## What v1.2 adds to v1.1
+- **Exact Clopper-Pearson box run (paper Sec. III.E, Table III; Supplement Sec. S4)**, registered and run after v1.1: `exact_box/` holds the plan, the hashed runner and analyzer, the 8,947 raw rows (`exact_box/data/`), the result tables and the results note. The stored `BD_tables.md` regenerates byte-identically from the raw rows (`exact_box/README.md`).
+- **Checks of that run:** the full-chain Arb ball recheck of all 2,330 DROP outcomes, the same with outward-rounded Clopper-Pearson endpoints proven in ball arithmetic (2,330/2,330 CERTIFIED), and the exact drop over the window actually tested for the 900 level datasets (`exact_box/src/rt_cpbox_arball*.py`, `rt_null_windows.py`; outputs in `exact_box/results/`).
+- Paper sources and PDFs of the arXiv version 17 (the v8 PDFs are in the v1.1 release). `CLAIMS.md` rows 489-496 cover the new files; `python3 -I verify.py CLAIMS.md` checks 491 rows.
 
 ## What v1.1 adds to v1
 v1 predated the split-covariance and random-graph runs and several later checks. v1.1 adds their code, plans, outputs and ledger rows:
@@ -42,10 +47,11 @@ document the spot checks of this. In the plans and logs, "host T" and "host D" s
 paths to those machines are not reproducible by readers and are not needed.
 
 ## File map
-- `paper/` main.tex, supplement.tex, refs.bib, figures (`figs/`), table includes (`tab_*.tex`, `v7tabs/`), the cross-reference files `xref_M.tex` and `xref_S.tex`, and the arXiv-version PDFs `A_arxiv_v8.pdf`, `A_arxiv_supplement_v8.pdf`. The v6 PDFs of v1.0 are in the v1.0 release.
+- `paper/` main.tex, supplement.tex, refs.bib, figures (`figs/`), table includes (`tab_*.tex`, `v7tabs/`), the cross-reference files `xref_M.tex` and `xref_S.tex`, and the arXiv-version PDFs `A_arxiv_v17.pdf`, `A_arxiv_supplement_v17.pdf`. The v6 and v8 PDFs are in the v1.0 and v1.1 releases.
 - `code/` estimators and simulation: `p22lib.py` (graphs, walks, exact d_s(t)), `p22*.py` (estimators and amendment variants), `run_p22*.py` / `run_amend*.py` (drivers), `analyze*.py` and `verdict_amend10_11.py` (analysis and verdicts), `round3_*`/`round4_*`/`round5_*`/`round6_*` (referee-response checks), `paper_scripts/` (figure/table builders), `archive/` (`regenerate_all.py`, pinned lock, input manifest), `audit/`, `lean/`, `verify_sage_*.sage` (independent checks).
 - `plans/` PLAN.md (all amendments, each written before its run), PREREG_*.md, RESULTS*.md, REGISTERED_NOT_RUN.md, IMPLEMENTATION_NOTES_A10_A11.md, REPRO_CHECK.md, ROUND4/5_CHECKS*.md, RESULTS.md, VERIFY_SAGE.md.
 - `results/` stored tables and per-dataset files: `v10/` and `amend13/` (new in v1.1), `base/` (original replication and Amendments 1-9, 12), `amend10_11/`, `round3/`, `external/` (inputs not otherwise tracked: raw_amend10c/11 and E4 diagnosis), `reproduction/` (release-run report).
+- `exact_box/` the exact Clopper-Pearson box run and its checks (new in v1.2; see its README).
 - `CLAIMS.md` every claim to its evidence file and check; `verify.py` the checker.
 
 Scripts in `code/` that were run on the original machines (drivers, `repro_check.py`) refer to the original directory layout; `regenerate_all.py` rebuilds it in a work directory.

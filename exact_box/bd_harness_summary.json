@@ -1,0 +1,8 @@
+{
+ "n": 2000,
+ "covered": 1917,
+ "rate": 0.9585,
+ "one_sided_cp_lower": 0.9503974682915637,
+ "K": 28,
+ "pass": true
+}

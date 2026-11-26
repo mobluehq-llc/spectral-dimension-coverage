@@ -536,3 +536,11 @@ Rows 462 onwards added 2026-11-24 for draft v10 (minimum compatible drop, contin
 | 486 | v8 S4 (P9) falsifier: a gapped tiling (a pad cell removed) is rejected | results/v10/certify_arbfull_falsifier.log | count:^tiling with a gap of one pad \(must be False\): False$ == 1 | v8; EXPLORATORY |
 | 487 | v8 S4 (P9) falsifier: a tiling with a leaf removed is rejected | results/v10/certify_arbfull_falsifier.log | count:^tiling with a leaf removed \(must be False\): False$ == 1 | v8; EXPLORATORY |
 | 488 | v8 S4 (P9) falsifier: a damaged objective (eps1 + 1000) fails the ball check | results/v10/certify_arbfull_falsifier.log | count:^eps1 \+ 1000 \(objective must fail\): \(False, 'objective' == 1 | v8; EXPLORATORY |
+| 489 | v17 III.E, S4: full-chain Arb ball recheck of every DROP of the exact-box run: 2330 rows | exact_box/results/bd_arball.jsonl | count:^\{"verdict": == 2330 | v1.2; EXPLORATORY |
+| 490 | v17 III.E, S4: all 2330 rechecked DROPs CERTIFIED | exact_box/results/bd_arball.jsonl | count:^\{"verdict": "CERTIFIED" == 2330 | v1.2; EXPLORATORY |
+| 491 | v17 III.E, S4: with CP endpoints widened outward and the widening proven in Arb, all 2330 CERTIFIED with the cells tiling the real line | exact_box/results/bd_arball_rig.jsonl | count:^\{"verdict": "CERTIFIED".*"cover_tiles_R": true == 2330 | v1.2; EXPLORATORY |
+| 492 | v17 abstract, III.E: 900 level datasets with the window actually tested | exact_box/results/null_windows.jsonl | count:^\{"arm": == 900 | v1.2; CONFIRMATORY (bar 2) |
+| 493 | v17 abstract, III.E: 71 of the 900 had no window | exact_box/results/null_windows.jsonl | count:"tested_drop": NaN == 71 | v1.2; CONFIRMATORY (bar 2) |
+| 494 | v17 abstract, III.E: largest exact drop over a tested window 0.229 (0.22861875481815086), 129 datasets at that maximum (max over all 829 checked by script; none above 0.25) | exact_box/results/null_windows.jsonl | count:"tested_drop": 0\.22861875481815086 == 129 | v1.2; CONFIRMATORY (bar 2) |
+| 495 | v17 III.E Table III, S4: level bar PASS, false DROP 0/900 | exact_box/RESULTS.md | grep:Level: PASS.\*\* False DROP 0/900 | v1.2; CONFIRMATORY (bar 2) |
+| 496 | v17 III.E Table III: power GO, 1, 85, 100, 100 of 100 at 8, 32, 128, 512 per node | exact_box/RESULTS.md | grep:C768xC16, CP box, global: 1, 85, 100, 100 of 100 at 8, 32, 128, 512 per node | v1.2; CONFIRMATORY (bar 3) |

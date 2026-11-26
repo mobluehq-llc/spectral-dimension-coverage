@@ -1,9 +1,9 @@
 # Do error bands for the scale-dependent spectral dimension cover the exact curve?
 
-Reproducibility bundle for paper A, **version 1.2 (25 November 2026)**, matching the arXiv version 17 text. v1.0 (the version-6 text) is Zenodo DOI 10.5281/zenodo.24488979; v1.1 (the version-8 text) is Zenodo DOI 10.5281/zenodo.24520991; v1.2 is the Zenodo version minted from this release (see the all-versions DOI below). Paper: *More walkers, worse error bars: bias-driven undercoverage and structural bounds for the scale-dependent spectral dimension* (`paper/A_arxiv_v17.pdf`, supplement `paper/A_arxiv_supplement_v17.pdf`).
+Reproducibility bundle for paper A, **version 1.2 (25 November 2026)**, matching the arXiv version 17 text. v1.0 (the version-6 text) is Zenodo DOI 10.5281/zenodo.24488979; v1.1 (the version-8 text) is Zenodo DOI 10.5281/zenodo.24520991; v1.2 is Zenodo DOI 10.5281/zenodo.24546178. Paper: *More walkers, worse error bars: bias-driven undercoverage and structural bounds for the scale-dependent spectral dimension* (`paper/A_arxiv_v17.pdf`, supplement `paper/A_arxiv_supplement_v17.pdf`).
 
 **Author:** Adam Faust, MOBLUEHQ, Inc. **Contact:** adam@mobluehq.com
-**Citation:** v1.1: [10.5281/zenodo.24520991](https://doi.org/10.5281/zenodo.24520991); all versions (resolves to the latest, v1.2): [10.5281/zenodo.24488978](https://doi.org/10.5281/zenodo.24488978). See `CITATION.cff`.
+**Citation:** this version (v1.2): [10.5281/zenodo.24546178](https://doi.org/10.5281/zenodo.24546178); v1.1: [10.5281/zenodo.24520991](https://doi.org/10.5281/zenodo.24520991); all versions (resolves to the latest, v1.2): [10.5281/zenodo.24488978](https://doi.org/10.5281/zenodo.24488978). See `CITATION.cff`.
 
 ## What the paper is
 Claims that the spectral dimension of a network or quantum-gravity model flows with scale rest on the log-derivative of a noisy return probability on a
